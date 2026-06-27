@@ -1,6 +1,20 @@
 # Neuro Graph VitePress Docs
 
-VitePress documentation site for Neuro Graph.
+Public documentation site for Neuro Graph, powered by VitePress.
+
+## Features
+
+- Markdown-first documentation
+- Built-in local search
+- Dark/light theme support
+- GitHub Pages deployment
+- Interactive RDF/OWL Visual Explorer
+  - Select sample RDF/OWL files
+  - Upload Turtle/N-Triples/TriG/N-Quads
+  - Parse triples in the browser
+  - Extract classes, properties, individuals, labels, comments, domain and range
+  - Switch between friendly, ontology, and raw triple views
+  - Click nodes to inspect URI and relationships
 
 ## Run locally
 
@@ -9,25 +23,11 @@ npm install
 npm run dev
 ```
 
-Open:
-
-```txt
-http://localhost:5173
-```
+Open the local URL printed by VitePress.
 
 ## Build
 
 ```bash
 npm run build
 npm run preview
-```
-
-## Deploy
-
-Push to `main`. GitHub Actions will build `docs/.vitepress/dist` and deploy it to GitHub Pages.
-
-In GitHub, set:
-
-```txt
-Settings → Pages → Build and deployment → Source → GitHub Actions
 ```

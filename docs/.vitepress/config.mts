@@ -26,6 +26,7 @@ export default defineConfig({
       { text: 'Docs', link: '/docs/' },
       { text: 'Getting Started', link: '/getting-started/' },
       { text: 'Concepts', link: '/concepts/' },
+      { text: 'Explorer', link: '/explorer/' },
       { text: 'API', link: '/api/' },
       { text: 'Community', link: '/community/' }
     ],
@@ -44,7 +45,8 @@ export default defineConfig({
           { text: 'Knowledge Graphs', link: '/concepts/' },
           { text: 'Entities', link: '/concepts/entities' },
           { text: 'Relationships', link: '/concepts/relationships' },
-          { text: 'Graph Queries', link: '/concepts/queries' }
+          { text: 'Graph Queries', link: '/concepts/queries' },
+          { text: 'RDF/OWL Explorer', link: '/explorer/' }
         ]
       },
       {

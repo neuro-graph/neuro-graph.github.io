@@ -1,0 +1,47 @@
+@prefix ex: <https://neuro-graph.dev/people#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Person a owl:Class ;
+  rdfs:label "Person" ;
+  rdfs:comment "A human being represented as an entity." .
+
+ex:Organization a owl:Class ;
+  rdfs:label "Organization" ;
+  rdfs:comment "A company, community, or institution." .
+
+ex:Project a owl:Class ;
+  rdfs:label "Project" ;
+  rdfs:comment "A project that people can build or contribute to." .
+
+ex:worksFor a owl:ObjectProperty ;
+  rdfs:label "works for" ;
+  rdfs:domain ex:Person ;
+  rdfs:range ex:Organization .
+
+ex:contributesTo a owl:ObjectProperty ;
+  rdfs:label "contributes to" ;
+  rdfs:domain ex:Person ;
+  rdfs:range ex:Project .
+
+ex:maintains a owl:ObjectProperty ;
+  rdfs:label "maintains" ;
+  rdfs:domain ex:Organization ;
+  rdfs:range ex:Project .
+
+ex:John a owl:NamedIndividual, ex:Person ;
+  rdfs:label "John" ;
+  rdfs:comment "A contributor exploring Neuro Graph documentation." ;
+  ex:contributesTo ex:NeuroGraph ;
+  ex:worksFor ex:OpenKnowledgeLab .
+
+ex:OpenKnowledgeLab a owl:NamedIndividual, ex:Organization ;
+  rdfs:label "Open Knowledge Lab" ;
+  ex:maintains ex:NeuroGraph .
+
+ex:NeuroGraph a owl:NamedIndividual, ex:Project ;
+  rdfs:label "Neuro Graph" ;
+  rdfs:comment "An open-source documentation and visualization project for knowledge graphs." .
