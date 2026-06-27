@@ -1,0 +1,161 @@
+:root {
+  --vp-c-brand-1: #7dd3fc;
+  --vp-c-brand-2: #38bdf8;
+  --vp-c-brand-3: #0ea5e9;
+  --vp-c-brand-soft: rgba(125, 211, 252, 0.16);
+
+  --vp-c-bg: #070b16;
+  --vp-c-bg-alt: #0b1020;
+  --vp-c-bg-elv: rgba(17, 24, 44, 0.86);
+  --vp-c-bg-soft: rgba(17, 24, 44, 0.62);
+
+  --vp-c-text-1: #eef4ff;
+  --vp-c-text-2: #c3cee0;
+  --vp-c-text-3: #94a3b8;
+
+  --vp-c-border: rgba(255, 255, 255, 0.12);
+  --vp-c-divider: rgba(255, 255, 255, 0.12);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(90deg, #ffffff, #7dd3fc, #a78bfa);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(125, 211, 252, 0.32), rgba(167, 139, 250, 0.26));
+  --vp-home-hero-image-filter: blur(72px);
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  --vp-c-bg: #f7fbff;
+  --vp-c-bg-alt: #eef5ff;
+  --vp-c-bg-elv: rgba(255, 255, 255, 0.9);
+  --vp-c-bg-soft: rgba(255, 255, 255, 0.66);
+  --vp-c-text-1: #09111f;
+  --vp-c-text-2: #3f4f63;
+  --vp-c-text-3: #64748b;
+  --vp-c-border: rgba(15, 23, 42, 0.14);
+  --vp-c-divider: rgba(15, 23, 42, 0.12);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 11, 22, 0.94) 0%,
+      rgba(7, 11, 22, 0.78) 42%,
+      rgba(7, 11, 22, 0.48) 100%
+    ),
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.22), transparent 34%),
+    radial-gradient(circle at top right, rgba(167, 139, 250, 0.2), transparent 30%),
+    url('/images/neuro-graph-bg.png');
+  background-size: cover, auto, auto, cover;
+  background-position: center, top left, top right, center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html:not(.dark) body {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(247, 251, 255, 0.94) 0%,
+      rgba(247, 251, 255, 0.82) 42%,
+      rgba(247, 251, 255, 0.58) 100%
+    ),
+    radial-gradient(circle at top left, rgba(2, 132, 199, 0.18), transparent 34%),
+    radial-gradient(circle at top right, rgba(124, 58, 237, 0.14), transparent 30%),
+    url('/images/neuro-graph-bg.png');
+  background-size: cover, auto, auto, cover;
+  background-position: center, top left, top right, center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.VPNav,
+.VPLocalNav,
+.VPSidebar {
+  background: rgba(7, 11, 22, 0.76) !important;
+  border-color: var(--vp-c-divider) !important;
+  backdrop-filter: blur(18px);
+}
+
+html:not(.dark) .VPNav,
+html:not(.dark) .VPLocalNav,
+html:not(.dark) .VPSidebar {
+  background: rgba(247, 251, 255, 0.78) !important;
+}
+
+.VPHome,
+.VPContent,
+.VPDoc,
+.Layout {
+  background: transparent !important;
+}
+
+.VPFeature,
+.VPDoc .content-container,
+.VPDocAsideOutline,
+.custom-block,
+.vp-doc div[class*='language-'] {
+  background: linear-gradient(180deg, rgba(17, 24, 44, 0.82), rgba(17, 24, 44, 0.48)) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+html:not(.dark) .VPFeature,
+html:not(.dark) .VPDoc .content-container,
+html:not(.dark) .VPDocAsideOutline,
+html:not(.dark) .custom-block,
+html:not(.dark) .vp-doc div[class*='language-'] {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.62)) !important;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+}
+
+.VPFeature {
+  border-radius: 24px !important;
+}
+
+.VPHomeHero .name,
+.VPHomeHero .text {
+  letter-spacing: -0.05em;
+}
+
+.VPHomeHero .tagline {
+  max-width: 760px;
+  color: var(--vp-c-text-2);
+}
+
+.VPButton.brand {
+  background: linear-gradient(135deg, #7dd3fc, #a78bfa) !important;
+  border-color: transparent !important;
+  color: #06101e !important;
+}
+
+.VPButton.alt {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: var(--vp-c-border) !important;
+  backdrop-filter: blur(14px);
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  letter-spacing: -0.035em;
+}
+
+.vp-doc a {
+  text-decoration-color: rgba(125, 211, 252, 0.38);
+  text-underline-offset: 3px;
+}
+
+.VPImage.logo {
+  border-radius: 12px;
+  box-shadow: 0 0 24px rgba(125, 211, 252, 0.28);
+}
