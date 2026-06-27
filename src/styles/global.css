@@ -45,7 +45,7 @@ body::before {
       rgba(7, 11, 22, 0.48) 72%,
       rgba(7, 11, 22, 0.38) 100%
     ),
-    url("/images/neuro-graph-bg.png");
+    url("./images/neuro-graph-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
