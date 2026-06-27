@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "BP-001",
+    "name": "Lead Capture to Qualification",
+    "category": "Customer & Revenue",
+    "slug": "lead-capture-to-qualification",
+    "path": "docs/business-processes/lead-capture-to-qualification.md",
+    "diagram": "docs/business-processes/diagrams/lead-capture-to-qualification.svg",
+    "stages": [
+      "Lead Capture",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Qualification"
+    ]
+  },
+  {
+    "id": "BP-002",
+    "name": "Campaign to Lead",
+    "category": "Customer & Revenue",
+    "slug": "campaign-to-lead",
+    "path": "docs/business-processes/campaign-to-lead.md",
+    "diagram": "docs/business-processes/diagrams/campaign-to-lead.svg",
+    "stages": [
+      "Campaign",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Lead"
+    ]
+  },
+  {
+    "id": "BP-003",
+    "name": "Opportunity to Quote",
+    "category": "Customer & Revenue",
+    "slug": "opportunity-to-quote",
+    "path": "docs/business-processes/opportunity-to-quote.md",
+    "diagram": "docs/business-processes/diagrams/opportunity-to-quote.svg",
+    "stages": [
+      "Opportunity",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Quote"
+    ]
+  },
+  {
+    "id": "BP-004",
+    "name": "Quote to Order",
+    "category": "Customer & Revenue",
+    "slug": "quote-to-order",
+    "path": "docs/business-processes/quote-to-order.md",
+    "diagram": "docs/business-processes/diagrams/quote-to-order.svg",
+    "stages": [
+      "Quote",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Order"
+    ]
+  },
+  {
+    "id": "BP-005",
+    "name": "Contract to Renewal",
+    "category": "Customer & Revenue",
+    "slug": "contract-to-renewal",
+    "path": "docs/business-processes/contract-to-renewal.md",
+    "diagram": "docs/business-processes/diagrams/contract-to-renewal.svg",
+    "stages": [
+      "Contract",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Renewal"
+    ]
+  },
+  {
+    "id": "BP-006",
+    "name": "Order Capture to Confirmation",
+    "category": "Customer & Revenue",
+    "slug": "order-capture-to-confirmation",
+    "path": "docs/business-processes/order-capture-to-confirmation.md",
+    "diagram": "docs/business-processes/diagrams/order-capture-to-confirmation.svg",
+    "stages": [
+      "Order Capture",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Confirmation"
+    ]
+  },
+  {
+    "id": "BP-007",
+    "name": "Order to Delivery",
+    "category": "Customer & Revenue",
+    "slug": "order-to-delivery",
+    "path": "docs/business-processes/order-to-delivery.md",
+    "diagram": "docs/business-processes/diagrams/order-to-delivery.svg",
+    "stages": [
+      "Order",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "BP-008",
+    "name": "Delivery to Billing",
+    "category": "Customer & Revenue",
+    "slug": "delivery-to-billing",
+    "path": "docs/business-processes/delivery-to-billing.md",
+    "diagram": "docs/business-processes/diagrams/delivery-to-billing.svg",
+    "stages": [
+      "Delivery",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Billing"
+    ]
+  },
+  {
+    "id": "BP-009",
+    "name": "Billing to Cash",
+    "category": "Customer & Revenue",
+    "slug": "billing-to-cash",
+    "path": "docs/business-processes/billing-to-cash.md",
+    "diagram": "docs/business-processes/diagrams/billing-to-cash.svg",
+    "stages": [
+      "Billing",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Cash"
+    ]
+  },
+  {
+    "id": "BP-010",
+    "name": "Customer Return to Credit",
+    "category": "Customer & Revenue",
+    "slug": "customer-return-to-credit",
+    "path": "docs/business-processes/customer-return-to-credit.md",
+    "diagram": "docs/business-processes/diagrams/customer-return-to-credit.svg",
+    "stages": [
+      "Customer Return",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Credit"
+    ]
+  },
+  {
+    "id": "BP-011",
+    "name": "Complaint to Resolution",
+    "category": "Customer & Revenue",
+    "slug": "complaint-to-resolution",
+    "path": "docs/business-processes/complaint-to-resolution.md",
+    "diagram": "docs/business-processes/diagrams/complaint-to-resolution.svg",
+    "stages": [
+      "Complaint",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Resolution"
+    ]
+  },
+  {
+    "id": "BP-012",
+    "name": "Service Request to Closure",
+    "category": "Customer & Revenue",
+    "slug": "service-request-to-closure",
+    "path": "docs/business-processes/service-request-to-closure.md",
+    "diagram": "docs/business-processes/diagrams/service-request-to-closure.svg",
+    "stages": [
+      "Service Request",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Closure"
+    ]
+  },
+  {
+    "id": "BP-013",
+    "name": "Subscription Activation to Renewal",
+    "category": "Customer & Revenue",
+    "slug": "subscription-activation-to-renewal",
+    "path": "docs/business-processes/subscription-activation-to-renewal.md",
+    "diagram": "docs/business-processes/diagrams/subscription-activation-to-renewal.svg",
+    "stages": [
+      "Subscription Activation",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Renewal"
+    ]
+  },
+  {
+    "id": "BP-014",
+    "name": "Usage Capture to Billing",
+    "category": "Customer & Revenue",
+    "slug": "usage-capture-to-billing",
+    "path": "docs/business-processes/usage-capture-to-billing.md",
+    "diagram": "docs/business-processes/diagrams/usage-capture-to-billing.svg",
+    "stages": [
+      "Usage Capture",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Billing"
+    ]
+  },
+  {
+    "id": "BP-015",
+    "name": "Partner Channel Order to Settlement",
+    "category": "Customer & Revenue",
+    "slug": "partner-channel-order-to-settlement",
+    "path": "docs/business-processes/partner-channel-order-to-settlement.md",
+    "diagram": "docs/business-processes/diagrams/partner-channel-order-to-settlement.svg",
+    "stages": [
+      "Partner Channel Order",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "BP-016",
+    "name": "Customer Onboarding to Account Activation",
+    "category": "Customer & Revenue",
+    "slug": "customer-onboarding-to-account-activation",
+    "path": "docs/business-processes/customer-onboarding-to-account-activation.md",
+    "diagram": "docs/business-processes/diagrams/customer-onboarding-to-account-activation.svg",
+    "stages": [
+      "Customer Onboarding",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Account Activation"
+    ]
+  },
+  {
+    "id": "BP-017",
+    "name": "Credit Check to Order Release",
+    "category": "Customer & Revenue",
+    "slug": "credit-check-to-order-release",
+    "path": "docs/business-processes/credit-check-to-order-release.md",
+    "diagram": "docs/business-processes/diagrams/credit-check-to-order-release.svg",
+    "stages": [
+      "Credit Check",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Order Release"
+    ]
+  },
+  {
+    "id": "BP-018",
+    "name": "Price Determination to Approval",
+    "category": "Customer & Revenue",
+    "slug": "price-determination-to-approval",
+    "path": "docs/business-processes/price-determination-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/price-determination-to-approval.svg",
+    "stages": [
+      "Price Determination",
+      "Validate customer context",
+      "Create commercial document",
+      "Fulfill or bill",
+      "Collect or resolve",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-019",
+    "name": "Supplier Discovery to Qualification",
+    "category": "Procurement & Supplier",
+    "slug": "supplier-discovery-to-qualification",
+    "path": "docs/business-processes/supplier-discovery-to-qualification.md",
+    "diagram": "docs/business-processes/diagrams/supplier-discovery-to-qualification.svg",
+    "stages": [
+      "Supplier Discovery",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Qualification"
+    ]
+  },
+  {
+    "id": "BP-020",
+    "name": "Supplier Onboarding to Activation",
+    "category": "Procurement & Supplier",
+    "slug": "supplier-onboarding-to-activation",
+    "path": "docs/business-processes/supplier-onboarding-to-activation.md",
+    "diagram": "docs/business-processes/diagrams/supplier-onboarding-to-activation.svg",
+    "stages": [
+      "Supplier Onboarding",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Activation"
+    ]
+  },
+  {
+    "id": "BP-021",
+    "name": "Source to Contract",
+    "category": "Procurement & Supplier",
+    "slug": "source-to-contract",
+    "path": "docs/business-processes/source-to-contract.md",
+    "diagram": "docs/business-processes/diagrams/source-to-contract.svg",
+    "stages": [
+      "Source",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Contract"
+    ]
+  },
+  {
+    "id": "BP-022",
+    "name": "Contract to Purchase Requisition",
+    "category": "Procurement & Supplier",
+    "slug": "contract-to-purchase-requisition",
+    "path": "docs/business-processes/contract-to-purchase-requisition.md",
+    "diagram": "docs/business-processes/diagrams/contract-to-purchase-requisition.svg",
+    "stages": [
+      "Contract",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Purchase Requisition"
+    ]
+  },
+  {
+    "id": "BP-023",
+    "name": "Purchase Requisition to Purchase Order",
+    "category": "Procurement & Supplier",
+    "slug": "purchase-requisition-to-purchase-order",
+    "path": "docs/business-processes/purchase-requisition-to-purchase-order.md",
+    "diagram": "docs/business-processes/diagrams/purchase-requisition-to-purchase-order.svg",
+    "stages": [
+      "Purchase Requisition",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Purchase Order"
+    ]
+  },
+  {
+    "id": "BP-024",
+    "name": "Purchase Order to Confirmation",
+    "category": "Procurement & Supplier",
+    "slug": "purchase-order-to-confirmation",
+    "path": "docs/business-processes/purchase-order-to-confirmation.md",
+    "diagram": "docs/business-processes/diagrams/purchase-order-to-confirmation.svg",
+    "stages": [
+      "Purchase Order",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Confirmation"
+    ]
+  },
+  {
+    "id": "BP-025",
+    "name": "Purchase Order to Goods Receipt",
+    "category": "Procurement & Supplier",
+    "slug": "purchase-order-to-goods-receipt",
+    "path": "docs/business-processes/purchase-order-to-goods-receipt.md",
+    "diagram": "docs/business-processes/diagrams/purchase-order-to-goods-receipt.svg",
+    "stages": [
+      "Purchase Order",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Goods Receipt"
+    ]
+  },
+  {
+    "id": "BP-026",
+    "name": "Goods Receipt to Supplier Invoice",
+    "category": "Procurement & Supplier",
+    "slug": "goods-receipt-to-supplier-invoice",
+    "path": "docs/business-processes/goods-receipt-to-supplier-invoice.md",
+    "diagram": "docs/business-processes/diagrams/goods-receipt-to-supplier-invoice.svg",
+    "stages": [
+      "Goods Receipt",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Supplier Invoice"
+    ]
+  },
+  {
+    "id": "BP-027",
+    "name": "Supplier Invoice to Payment",
+    "category": "Procurement & Supplier",
+    "slug": "supplier-invoice-to-payment",
+    "path": "docs/business-processes/supplier-invoice-to-payment.md",
+    "diagram": "docs/business-processes/diagrams/supplier-invoice-to-payment.svg",
+    "stages": [
+      "Supplier Invoice",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Payment"
+    ]
+  },
+  {
+    "id": "BP-028",
+    "name": "Three Way Match to Exception Resolution",
+    "category": "Procurement & Supplier",
+    "slug": "three-way-match-to-exception-resolution",
+    "path": "docs/business-processes/three-way-match-to-exception-resolution.md",
+    "diagram": "docs/business-processes/diagrams/three-way-match-to-exception-resolution.svg",
+    "stages": [
+      "Three Way Match",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Exception Resolution"
+    ]
+  },
+  {
+    "id": "BP-029",
+    "name": "Supplier Return to Credit Memo",
+    "category": "Procurement & Supplier",
+    "slug": "supplier-return-to-credit-memo",
+    "path": "docs/business-processes/supplier-return-to-credit-memo.md",
+    "diagram": "docs/business-processes/diagrams/supplier-return-to-credit-memo.svg",
+    "stages": [
+      "Supplier Return",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Credit Memo"
+    ]
+  },
+  {
+    "id": "BP-030",
+    "name": "Spend Request to Approval",
+    "category": "Procurement & Supplier",
+    "slug": "spend-request-to-approval",
+    "path": "docs/business-processes/spend-request-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/spend-request-to-approval.svg",
+    "stages": [
+      "Spend Request",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-031",
+    "name": "Catalog Request to Order",
+    "category": "Procurement & Supplier",
+    "slug": "catalog-request-to-order",
+    "path": "docs/business-processes/catalog-request-to-order.md",
+    "diagram": "docs/business-processes/diagrams/catalog-request-to-order.svg",
+    "stages": [
+      "Catalog Request",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Order"
+    ]
+  },
+  {
+    "id": "BP-032",
+    "name": "Supplier Performance Review to Improvement",
+    "category": "Procurement & Supplier",
+    "slug": "supplier-performance-review-to-improvement",
+    "path": "docs/business-processes/supplier-performance-review-to-improvement.md",
+    "diagram": "docs/business-processes/diagrams/supplier-performance-review-to-improvement.svg",
+    "stages": [
+      "Supplier Performance Review",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Improvement"
+    ]
+  },
+  {
+    "id": "BP-033",
+    "name": "Contract Compliance to Exception",
+    "category": "Procurement & Supplier",
+    "slug": "contract-compliance-to-exception",
+    "path": "docs/business-processes/contract-compliance-to-exception.md",
+    "diagram": "docs/business-processes/diagrams/contract-compliance-to-exception.svg",
+    "stages": [
+      "Contract Compliance",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Exception"
+    ]
+  },
+  {
+    "id": "BP-034",
+    "name": "Import Procurement to Landed Cost",
+    "category": "Procurement & Supplier",
+    "slug": "import-procurement-to-landed-cost",
+    "path": "docs/business-processes/import-procurement-to-landed-cost.md",
+    "diagram": "docs/business-processes/diagrams/import-procurement-to-landed-cost.svg",
+    "stages": [
+      "Import Procurement",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Landed Cost"
+    ]
+  },
+  {
+    "id": "BP-035",
+    "name": "Service Entry to Invoice",
+    "category": "Procurement & Supplier",
+    "slug": "service-entry-to-invoice",
+    "path": "docs/business-processes/service-entry-to-invoice.md",
+    "diagram": "docs/business-processes/diagrams/service-entry-to-invoice.svg",
+    "stages": [
+      "Service Entry",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Invoice"
+    ]
+  },
+  {
+    "id": "BP-036",
+    "name": "Procurement Closure to Archive",
+    "category": "Procurement & Supplier",
+    "slug": "procurement-closure-to-archive",
+    "path": "docs/business-processes/procurement-closure-to-archive.md",
+    "diagram": "docs/business-processes/diagrams/procurement-closure-to-archive.svg",
+    "stages": [
+      "Procurement Closure",
+      "Validate supplier context",
+      "Create commitment",
+      "Receive or confirm",
+      "Match and settle",
+      "Archive"
+    ]
+  },
+  {
+    "id": "BP-037",
+    "name": "Material Request to Reservation",
+    "category": "Inventory & Logistics",
+    "slug": "material-request-to-reservation",
+    "path": "docs/business-processes/material-request-to-reservation.md",
+    "diagram": "docs/business-processes/diagrams/material-request-to-reservation.svg",
+    "stages": [
+      "Material Request",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Reservation"
+    ]
+  },
+  {
+    "id": "BP-038",
+    "name": "Inbound Delivery to Putaway",
+    "category": "Inventory & Logistics",
+    "slug": "inbound-delivery-to-putaway",
+    "path": "docs/business-processes/inbound-delivery-to-putaway.md",
+    "diagram": "docs/business-processes/diagrams/inbound-delivery-to-putaway.svg",
+    "stages": [
+      "Inbound Delivery",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Putaway"
+    ]
+  },
+  {
+    "id": "BP-039",
+    "name": "Outbound Delivery to Goods Issue",
+    "category": "Inventory & Logistics",
+    "slug": "outbound-delivery-to-goods-issue",
+    "path": "docs/business-processes/outbound-delivery-to-goods-issue.md",
+    "diagram": "docs/business-processes/diagrams/outbound-delivery-to-goods-issue.svg",
+    "stages": [
+      "Outbound Delivery",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Goods Issue"
+    ]
+  },
+  {
+    "id": "BP-040",
+    "name": "Stock Transfer Request to Receipt",
+    "category": "Inventory & Logistics",
+    "slug": "stock-transfer-request-to-receipt",
+    "path": "docs/business-processes/stock-transfer-request-to-receipt.md",
+    "diagram": "docs/business-processes/diagrams/stock-transfer-request-to-receipt.svg",
+    "stages": [
+      "Stock Transfer Request",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Receipt"
+    ]
+  },
+  {
+    "id": "BP-041",
+    "name": "Goods Movement to Inventory Posting",
+    "category": "Inventory & Logistics",
+    "slug": "goods-movement-to-inventory-posting",
+    "path": "docs/business-processes/goods-movement-to-inventory-posting.md",
+    "diagram": "docs/business-processes/diagrams/goods-movement-to-inventory-posting.svg",
+    "stages": [
+      "Goods Movement",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Inventory Posting"
+    ]
+  },
+  {
+    "id": "BP-042",
+    "name": "Cycle Count to Adjustment",
+    "category": "Inventory & Logistics",
+    "slug": "cycle-count-to-adjustment",
+    "path": "docs/business-processes/cycle-count-to-adjustment.md",
+    "diagram": "docs/business-processes/diagrams/cycle-count-to-adjustment.svg",
+    "stages": [
+      "Cycle Count",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Adjustment"
+    ]
+  },
+  {
+    "id": "BP-043",
+    "name": "Physical Inventory to Reconciliation",
+    "category": "Inventory & Logistics",
+    "slug": "physical-inventory-to-reconciliation",
+    "path": "docs/business-processes/physical-inventory-to-reconciliation.md",
+    "diagram": "docs/business-processes/diagrams/physical-inventory-to-reconciliation.svg",
+    "stages": [
+      "Physical Inventory",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Reconciliation"
+    ]
+  },
+  {
+    "id": "BP-044",
+    "name": "Batch Creation to Traceability",
+    "category": "Inventory & Logistics",
+    "slug": "batch-creation-to-traceability",
+    "path": "docs/business-processes/batch-creation-to-traceability.md",
+    "diagram": "docs/business-processes/diagrams/batch-creation-to-traceability.svg",
+    "stages": [
+      "Batch Creation",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Traceability"
+    ]
+  },
+  {
+    "id": "BP-045",
+    "name": "Serial Number Assignment to Tracking",
+    "category": "Inventory & Logistics",
+    "slug": "serial-number-assignment-to-tracking",
+    "path": "docs/business-processes/serial-number-assignment-to-tracking.md",
+    "diagram": "docs/business-processes/diagrams/serial-number-assignment-to-tracking.svg",
+    "stages": [
+      "Serial Number Assignment",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Tracking"
+    ]
+  },
+  {
+    "id": "BP-046",
+    "name": "Warehouse Task to Confirmation",
+    "category": "Inventory & Logistics",
+    "slug": "warehouse-task-to-confirmation",
+    "path": "docs/business-processes/warehouse-task-to-confirmation.md",
+    "diagram": "docs/business-processes/diagrams/warehouse-task-to-confirmation.svg",
+    "stages": [
+      "Warehouse Task",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Confirmation"
+    ]
+  },
+  {
+    "id": "BP-047",
+    "name": "Picking to Packing",
+    "category": "Inventory & Logistics",
+    "slug": "picking-to-packing",
+    "path": "docs/business-processes/picking-to-packing.md",
+    "diagram": "docs/business-processes/diagrams/picking-to-packing.svg",
+    "stages": [
+      "Picking",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Packing"
+    ]
+  },
+  {
+    "id": "BP-048",
+    "name": "Packing to Shipment",
+    "category": "Inventory & Logistics",
+    "slug": "packing-to-shipment",
+    "path": "docs/business-processes/packing-to-shipment.md",
+    "diagram": "docs/business-processes/diagrams/packing-to-shipment.svg",
+    "stages": [
+      "Packing",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Shipment"
+    ]
+  },
+  {
+    "id": "BP-049",
+    "name": "Shipment Planning to Dispatch",
+    "category": "Inventory & Logistics",
+    "slug": "shipment-planning-to-dispatch",
+    "path": "docs/business-processes/shipment-planning-to-dispatch.md",
+    "diagram": "docs/business-processes/diagrams/shipment-planning-to-dispatch.svg",
+    "stages": [
+      "Shipment Planning",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Dispatch"
+    ]
+  },
+  {
+    "id": "BP-050",
+    "name": "Transportation Tender to Carrier Confirmation",
+    "category": "Inventory & Logistics",
+    "slug": "transportation-tender-to-carrier-confirmation",
+    "path": "docs/business-processes/transportation-tender-to-carrier-confirmation.md",
+    "diagram": "docs/business-processes/diagrams/transportation-tender-to-carrier-confirmation.svg",
+    "stages": [
+      "Transportation Tender",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Carrier Confirmation"
+    ]
+  },
+  {
+    "id": "BP-051",
+    "name": "Freight Cost Capture to Settlement",
+    "category": "Inventory & Logistics",
+    "slug": "freight-cost-capture-to-settlement",
+    "path": "docs/business-processes/freight-cost-capture-to-settlement.md",
+    "diagram": "docs/business-processes/diagrams/freight-cost-capture-to-settlement.svg",
+    "stages": [
+      "Freight Cost Capture",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "BP-052",
+    "name": "Return Receipt to Restock",
+    "category": "Inventory & Logistics",
+    "slug": "return-receipt-to-restock",
+    "path": "docs/business-processes/return-receipt-to-restock.md",
+    "diagram": "docs/business-processes/diagrams/return-receipt-to-restock.svg",
+    "stages": [
+      "Return Receipt",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Restock"
+    ]
+  },
+  {
+    "id": "BP-053",
+    "name": "Scrap Request to Inventory Writeoff",
+    "category": "Inventory & Logistics",
+    "slug": "scrap-request-to-inventory-writeoff",
+    "path": "docs/business-processes/scrap-request-to-inventory-writeoff.md",
+    "diagram": "docs/business-processes/diagrams/scrap-request-to-inventory-writeoff.svg",
+    "stages": [
+      "Scrap Request",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Inventory Writeoff"
+    ]
+  },
+  {
+    "id": "BP-054",
+    "name": "Inventory Aging to Disposition",
+    "category": "Inventory & Logistics",
+    "slug": "inventory-aging-to-disposition",
+    "path": "docs/business-processes/inventory-aging-to-disposition.md",
+    "diagram": "docs/business-processes/diagrams/inventory-aging-to-disposition.svg",
+    "stages": [
+      "Inventory Aging",
+      "Validate material and location",
+      "Plan movement",
+      "Execute warehouse/logistics task",
+      "Post inventory impact",
+      "Disposition"
+    ]
+  },
+  {
+    "id": "BP-055",
+    "name": "Demand Signal to Production Plan",
+    "category": "Manufacturing & Operations",
+    "slug": "demand-signal-to-production-plan",
+    "path": "docs/business-processes/demand-signal-to-production-plan.md",
+    "diagram": "docs/business-processes/diagrams/demand-signal-to-production-plan.svg",
+    "stages": [
+      "Demand Signal",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Production Plan"
+    ]
+  },
+  {
+    "id": "BP-056",
+    "name": "Production Order Creation to Release",
+    "category": "Manufacturing & Operations",
+    "slug": "production-order-creation-to-release",
+    "path": "docs/business-processes/production-order-creation-to-release.md",
+    "diagram": "docs/business-processes/diagrams/production-order-creation-to-release.svg",
+    "stages": [
+      "Production Order Creation",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Release"
+    ]
+  },
+  {
+    "id": "BP-057",
+    "name": "Production Order Release to Staging",
+    "category": "Manufacturing & Operations",
+    "slug": "production-order-release-to-staging",
+    "path": "docs/business-processes/production-order-release-to-staging.md",
+    "diagram": "docs/business-processes/diagrams/production-order-release-to-staging.svg",
+    "stages": [
+      "Production Order Release",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Staging"
+    ]
+  },
+  {
+    "id": "BP-058",
+    "name": "Material Staging to Consumption",
+    "category": "Manufacturing & Operations",
+    "slug": "material-staging-to-consumption",
+    "path": "docs/business-processes/material-staging-to-consumption.md",
+    "diagram": "docs/business-processes/diagrams/material-staging-to-consumption.svg",
+    "stages": [
+      "Material Staging",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Consumption"
+    ]
+  },
+  {
+    "id": "BP-059",
+    "name": "Operation Confirmation to Yield",
+    "category": "Manufacturing & Operations",
+    "slug": "operation-confirmation-to-yield",
+    "path": "docs/business-processes/operation-confirmation-to-yield.md",
+    "diagram": "docs/business-processes/diagrams/operation-confirmation-to-yield.svg",
+    "stages": [
+      "Operation Confirmation",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Yield"
+    ]
+  },
+  {
+    "id": "BP-060",
+    "name": "Quality Inspection to Usage Decision",
+    "category": "Manufacturing & Operations",
+    "slug": "quality-inspection-to-usage-decision",
+    "path": "docs/business-processes/quality-inspection-to-usage-decision.md",
+    "diagram": "docs/business-processes/diagrams/quality-inspection-to-usage-decision.svg",
+    "stages": [
+      "Quality Inspection",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Usage Decision"
+    ]
+  },
+  {
+    "id": "BP-061",
+    "name": "Production Variance to Settlement",
+    "category": "Manufacturing & Operations",
+    "slug": "production-variance-to-settlement",
+    "path": "docs/business-processes/production-variance-to-settlement.md",
+    "diagram": "docs/business-processes/diagrams/production-variance-to-settlement.svg",
+    "stages": [
+      "Production Variance",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "BP-062",
+    "name": "Make to Stock Production",
+    "category": "Manufacturing & Operations",
+    "slug": "make-to-stock-production",
+    "path": "docs/business-processes/make-to-stock-production.md",
+    "diagram": "docs/business-processes/diagrams/make-to-stock-production.svg",
+    "stages": [
+      "Make",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Stock Production"
+    ]
+  },
+  {
+    "id": "BP-063",
+    "name": "Make to Order Production",
+    "category": "Manufacturing & Operations",
+    "slug": "make-to-order-production",
+    "path": "docs/business-processes/make-to-order-production.md",
+    "diagram": "docs/business-processes/diagrams/make-to-order-production.svg",
+    "stages": [
+      "Make",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Order Production"
+    ]
+  },
+  {
+    "id": "BP-064",
+    "name": "Engineer to Order Fulfillment",
+    "category": "Manufacturing & Operations",
+    "slug": "engineer-to-order-fulfillment",
+    "path": "docs/business-processes/engineer-to-order-fulfillment.md",
+    "diagram": "docs/business-processes/diagrams/engineer-to-order-fulfillment.svg",
+    "stages": [
+      "Engineer",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Order Fulfillment"
+    ]
+  },
+  {
+    "id": "BP-065",
+    "name": "Bill of Material Change to Release",
+    "category": "Manufacturing & Operations",
+    "slug": "bill-of-material-change-to-release",
+    "path": "docs/business-processes/bill-of-material-change-to-release.md",
+    "diagram": "docs/business-processes/diagrams/bill-of-material-change-to-release.svg",
+    "stages": [
+      "Bill of Material Change",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Release"
+    ]
+  },
+  {
+    "id": "BP-066",
+    "name": "Routing Change to Production Version",
+    "category": "Manufacturing & Operations",
+    "slug": "routing-change-to-production-version",
+    "path": "docs/business-processes/routing-change-to-production-version.md",
+    "diagram": "docs/business-processes/diagrams/routing-change-to-production-version.svg",
+    "stages": [
+      "Routing Change",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Production Version"
+    ]
+  },
+  {
+    "id": "BP-067",
+    "name": "Work Center Capacity to Dispatch",
+    "category": "Manufacturing & Operations",
+    "slug": "work-center-capacity-to-dispatch",
+    "path": "docs/business-processes/work-center-capacity-to-dispatch.md",
+    "diagram": "docs/business-processes/diagrams/work-center-capacity-to-dispatch.svg",
+    "stages": [
+      "Work Center Capacity",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Dispatch"
+    ]
+  },
+  {
+    "id": "BP-068",
+    "name": "Shop Floor Issue to Resolution",
+    "category": "Manufacturing & Operations",
+    "slug": "shop-floor-issue-to-resolution",
+    "path": "docs/business-processes/shop-floor-issue-to-resolution.md",
+    "diagram": "docs/business-processes/diagrams/shop-floor-issue-to-resolution.svg",
+    "stages": [
+      "Shop Floor Issue",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Resolution"
+    ]
+  },
+  {
+    "id": "BP-069",
+    "name": "Rework Order to Completion",
+    "category": "Manufacturing & Operations",
+    "slug": "rework-order-to-completion",
+    "path": "docs/business-processes/rework-order-to-completion.md",
+    "diagram": "docs/business-processes/diagrams/rework-order-to-completion.svg",
+    "stages": [
+      "Rework Order",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Completion"
+    ]
+  },
+  {
+    "id": "BP-070",
+    "name": "Subcontracting Issue to Receipt",
+    "category": "Manufacturing & Operations",
+    "slug": "subcontracting-issue-to-receipt",
+    "path": "docs/business-processes/subcontracting-issue-to-receipt.md",
+    "diagram": "docs/business-processes/diagrams/subcontracting-issue-to-receipt.svg",
+    "stages": [
+      "Subcontracting Issue",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Receipt"
+    ]
+  },
+  {
+    "id": "BP-071",
+    "name": "Co Product Allocation to Costing",
+    "category": "Manufacturing & Operations",
+    "slug": "co-product-allocation-to-costing",
+    "path": "docs/business-processes/co-product-allocation-to-costing.md",
+    "diagram": "docs/business-processes/diagrams/co-product-allocation-to-costing.svg",
+    "stages": [
+      "Co Product Allocation",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Costing"
+    ]
+  },
+  {
+    "id": "BP-072",
+    "name": "Production Close to Archive",
+    "category": "Manufacturing & Operations",
+    "slug": "production-close-to-archive",
+    "path": "docs/business-processes/production-close-to-archive.md",
+    "diagram": "docs/business-processes/diagrams/production-close-to-archive.svg",
+    "stages": [
+      "Production Close",
+      "Plan resources and components",
+      "Release execution",
+      "Confirm operation",
+      "Record quality and cost",
+      "Archive"
+    ]
+  },
+  {
+    "id": "BP-073",
+    "name": "Journal Entry Request to Posting",
+    "category": "Finance & Controlling",
+    "slug": "journal-entry-request-to-posting",
+    "path": "docs/business-processes/journal-entry-request-to-posting.md",
+    "diagram": "docs/business-processes/diagrams/journal-entry-request-to-posting.svg",
+    "stages": [
+      "Journal Entry Request",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Posting"
+    ]
+  },
+  {
+    "id": "BP-074",
+    "name": "Accrual Calculation to Reversal",
+    "category": "Finance & Controlling",
+    "slug": "accrual-calculation-to-reversal",
+    "path": "docs/business-processes/accrual-calculation-to-reversal.md",
+    "diagram": "docs/business-processes/diagrams/accrual-calculation-to-reversal.svg",
+    "stages": [
+      "Accrual Calculation",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Reversal"
+    ]
+  },
+  {
+    "id": "BP-075",
+    "name": "Accounts Payable Invoice to Clearing",
+    "category": "Finance & Controlling",
+    "slug": "accounts-payable-invoice-to-clearing",
+    "path": "docs/business-processes/accounts-payable-invoice-to-clearing.md",
+    "diagram": "docs/business-processes/diagrams/accounts-payable-invoice-to-clearing.svg",
+    "stages": [
+      "Accounts Payable Invoice",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Clearing"
+    ]
+  },
+  {
+    "id": "BP-076",
+    "name": "Accounts Receivable Invoice to Clearing",
+    "category": "Finance & Controlling",
+    "slug": "accounts-receivable-invoice-to-clearing",
+    "path": "docs/business-processes/accounts-receivable-invoice-to-clearing.md",
+    "diagram": "docs/business-processes/diagrams/accounts-receivable-invoice-to-clearing.svg",
+    "stages": [
+      "Accounts Receivable Invoice",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Clearing"
+    ]
+  },
+  {
+    "id": "BP-077",
+    "name": "Incoming Payment to Bank Reconciliation",
+    "category": "Finance & Controlling",
+    "slug": "incoming-payment-to-bank-reconciliation",
+    "path": "docs/business-processes/incoming-payment-to-bank-reconciliation.md",
+    "diagram": "docs/business-processes/diagrams/incoming-payment-to-bank-reconciliation.svg",
+    "stages": [
+      "Incoming Payment",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Bank Reconciliation"
+    ]
+  },
+  {
+    "id": "BP-078",
+    "name": "Outgoing Payment to Bank Statement",
+    "category": "Finance & Controlling",
+    "slug": "outgoing-payment-to-bank-statement",
+    "path": "docs/business-processes/outgoing-payment-to-bank-statement.md",
+    "diagram": "docs/business-processes/diagrams/outgoing-payment-to-bank-statement.svg",
+    "stages": [
+      "Outgoing Payment",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Bank Statement"
+    ]
+  },
+  {
+    "id": "BP-079",
+    "name": "Bank Statement to Cash Application",
+    "category": "Finance & Controlling",
+    "slug": "bank-statement-to-cash-application",
+    "path": "docs/business-processes/bank-statement-to-cash-application.md",
+    "diagram": "docs/business-processes/diagrams/bank-statement-to-cash-application.svg",
+    "stages": [
+      "Bank Statement",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Cash Application"
+    ]
+  },
+  {
+    "id": "BP-080",
+    "name": "Expense Claim to Reimbursement",
+    "category": "Finance & Controlling",
+    "slug": "expense-claim-to-reimbursement",
+    "path": "docs/business-processes/expense-claim-to-reimbursement.md",
+    "diagram": "docs/business-processes/diagrams/expense-claim-to-reimbursement.svg",
+    "stages": [
+      "Expense Claim",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Reimbursement"
+    ]
+  },
+  {
+    "id": "BP-081",
+    "name": "Cost Center Planning to Allocation",
+    "category": "Finance & Controlling",
+    "slug": "cost-center-planning-to-allocation",
+    "path": "docs/business-processes/cost-center-planning-to-allocation.md",
+    "diagram": "docs/business-processes/diagrams/cost-center-planning-to-allocation.svg",
+    "stages": [
+      "Cost Center Planning",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Allocation"
+    ]
+  },
+  {
+    "id": "BP-082",
+    "name": "Profit Center Posting to Reporting",
+    "category": "Finance & Controlling",
+    "slug": "profit-center-posting-to-reporting",
+    "path": "docs/business-processes/profit-center-posting-to-reporting.md",
+    "diagram": "docs/business-processes/diagrams/profit-center-posting-to-reporting.svg",
+    "stages": [
+      "Profit Center Posting",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Reporting"
+    ]
+  },
+  {
+    "id": "BP-083",
+    "name": "Internal Order Planning to Settlement",
+    "category": "Finance & Controlling",
+    "slug": "internal-order-planning-to-settlement",
+    "path": "docs/business-processes/internal-order-planning-to-settlement.md",
+    "diagram": "docs/business-processes/diagrams/internal-order-planning-to-settlement.svg",
+    "stages": [
+      "Internal Order Planning",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "BP-084",
+    "name": "Asset Acquisition to Capitalization",
+    "category": "Finance & Controlling",
+    "slug": "asset-acquisition-to-capitalization",
+    "path": "docs/business-processes/asset-acquisition-to-capitalization.md",
+    "diagram": "docs/business-processes/diagrams/asset-acquisition-to-capitalization.svg",
+    "stages": [
+      "Asset Acquisition",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Capitalization"
+    ]
+  },
+  {
+    "id": "BP-085",
+    "name": "Asset Depreciation to Posting",
+    "category": "Finance & Controlling",
+    "slug": "asset-depreciation-to-posting",
+    "path": "docs/business-processes/asset-depreciation-to-posting.md",
+    "diagram": "docs/business-processes/diagrams/asset-depreciation-to-posting.svg",
+    "stages": [
+      "Asset Depreciation",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Posting"
+    ]
+  },
+  {
+    "id": "BP-086",
+    "name": "Asset Transfer to Retirement",
+    "category": "Finance & Controlling",
+    "slug": "asset-transfer-to-retirement",
+    "path": "docs/business-processes/asset-transfer-to-retirement.md",
+    "diagram": "docs/business-processes/diagrams/asset-transfer-to-retirement.svg",
+    "stages": [
+      "Asset Transfer",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Retirement"
+    ]
+  },
+  {
+    "id": "BP-087",
+    "name": "Budget Request to Release",
+    "category": "Finance & Controlling",
+    "slug": "budget-request-to-release",
+    "path": "docs/business-processes/budget-request-to-release.md",
+    "diagram": "docs/business-processes/diagrams/budget-request-to-release.svg",
+    "stages": [
+      "Budget Request",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Release"
+    ]
+  },
+  {
+    "id": "BP-088",
+    "name": "Commitment Tracking to Actuals",
+    "category": "Finance & Controlling",
+    "slug": "commitment-tracking-to-actuals",
+    "path": "docs/business-processes/commitment-tracking-to-actuals.md",
+    "diagram": "docs/business-processes/diagrams/commitment-tracking-to-actuals.svg",
+    "stages": [
+      "Commitment Tracking",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Actuals"
+    ]
+  },
+  {
+    "id": "BP-089",
+    "name": "Period Close to Financial Statement",
+    "category": "Finance & Controlling",
+    "slug": "period-close-to-financial-statement",
+    "path": "docs/business-processes/period-close-to-financial-statement.md",
+    "diagram": "docs/business-processes/diagrams/period-close-to-financial-statement.svg",
+    "stages": [
+      "Period Close",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Financial Statement"
+    ]
+  },
+  {
+    "id": "BP-090",
+    "name": "Intercompany Transaction to Reconciliation",
+    "category": "Finance & Controlling",
+    "slug": "intercompany-transaction-to-reconciliation",
+    "path": "docs/business-processes/intercompany-transaction-to-reconciliation.md",
+    "diagram": "docs/business-processes/diagrams/intercompany-transaction-to-reconciliation.svg",
+    "stages": [
+      "Intercompany Transaction",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Reconciliation"
+    ]
+  },
+  {
+    "id": "BP-091",
+    "name": "Tax Determination to Reporting",
+    "category": "Finance & Controlling",
+    "slug": "tax-determination-to-reporting",
+    "path": "docs/business-processes/tax-determination-to-reporting.md",
+    "diagram": "docs/business-processes/diagrams/tax-determination-to-reporting.svg",
+    "stages": [
+      "Tax Determination",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Reporting"
+    ]
+  },
+  {
+    "id": "BP-092",
+    "name": "Currency Revaluation to Posting",
+    "category": "Finance & Controlling",
+    "slug": "currency-revaluation-to-posting",
+    "path": "docs/business-processes/currency-revaluation-to-posting.md",
+    "diagram": "docs/business-processes/diagrams/currency-revaluation-to-posting.svg",
+    "stages": [
+      "Currency Revaluation",
+      "Validate accounting context",
+      "Calculate or classify amount",
+      "Post financial impact",
+      "Reconcile and report",
+      "Posting"
+    ]
+  },
+  {
+    "id": "BP-093",
+    "name": "Maintenance Request to Notification",
+    "category": "Assets & Maintenance",
+    "slug": "maintenance-request-to-notification",
+    "path": "docs/business-processes/maintenance-request-to-notification.md",
+    "diagram": "docs/business-processes/diagrams/maintenance-request-to-notification.svg",
+    "stages": [
+      "Maintenance Request",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Notification"
+    ]
+  },
+  {
+    "id": "BP-094",
+    "name": "Notification to Work Order",
+    "category": "Assets & Maintenance",
+    "slug": "notification-to-work-order",
+    "path": "docs/business-processes/notification-to-work-order.md",
+    "diagram": "docs/business-processes/diagrams/notification-to-work-order.svg",
+    "stages": [
+      "Notification",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Work Order"
+    ]
+  },
+  {
+    "id": "BP-095",
+    "name": "Work Order Planning to Release",
+    "category": "Assets & Maintenance",
+    "slug": "work-order-planning-to-release",
+    "path": "docs/business-processes/work-order-planning-to-release.md",
+    "diagram": "docs/business-processes/diagrams/work-order-planning-to-release.svg",
+    "stages": [
+      "Work Order Planning",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Release"
+    ]
+  },
+  {
+    "id": "BP-096",
+    "name": "Work Order Execution to Confirmation",
+    "category": "Assets & Maintenance",
+    "slug": "work-order-execution-to-confirmation",
+    "path": "docs/business-processes/work-order-execution-to-confirmation.md",
+    "diagram": "docs/business-processes/diagrams/work-order-execution-to-confirmation.svg",
+    "stages": [
+      "Work Order Execution",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Confirmation"
+    ]
+  },
+  {
+    "id": "BP-097",
+    "name": "Spare Part Reservation to Issue",
+    "category": "Assets & Maintenance",
+    "slug": "spare-part-reservation-to-issue",
+    "path": "docs/business-processes/spare-part-reservation-to-issue.md",
+    "diagram": "docs/business-processes/diagrams/spare-part-reservation-to-issue.svg",
+    "stages": [
+      "Spare Part Reservation",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Issue"
+    ]
+  },
+  {
+    "id": "BP-098",
+    "name": "Breakdown Event to Restoration",
+    "category": "Assets & Maintenance",
+    "slug": "breakdown-event-to-restoration",
+    "path": "docs/business-processes/breakdown-event-to-restoration.md",
+    "diagram": "docs/business-processes/diagrams/breakdown-event-to-restoration.svg",
+    "stages": [
+      "Breakdown Event",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Restoration"
+    ]
+  },
+  {
+    "id": "BP-099",
+    "name": "Preventive Maintenance Plan to Call",
+    "category": "Assets & Maintenance",
+    "slug": "preventive-maintenance-plan-to-call",
+    "path": "docs/business-processes/preventive-maintenance-plan-to-call.md",
+    "diagram": "docs/business-processes/diagrams/preventive-maintenance-plan-to-call.svg",
+    "stages": [
+      "Preventive Maintenance Plan",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Call"
+    ]
+  },
+  {
+    "id": "BP-100",
+    "name": "Inspection Finding to Corrective Action",
+    "category": "Assets & Maintenance",
+    "slug": "inspection-finding-to-corrective-action",
+    "path": "docs/business-processes/inspection-finding-to-corrective-action.md",
+    "diagram": "docs/business-processes/diagrams/inspection-finding-to-corrective-action.svg",
+    "stages": [
+      "Inspection Finding",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Corrective Action"
+    ]
+  },
+  {
+    "id": "BP-101",
+    "name": "Meter Reading to Maintenance Trigger",
+    "category": "Assets & Maintenance",
+    "slug": "meter-reading-to-maintenance-trigger",
+    "path": "docs/business-processes/meter-reading-to-maintenance-trigger.md",
+    "diagram": "docs/business-processes/diagrams/meter-reading-to-maintenance-trigger.svg",
+    "stages": [
+      "Meter Reading",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Maintenance Trigger"
+    ]
+  },
+  {
+    "id": "BP-102",
+    "name": "Maintenance Cost Capture to Settlement",
+    "category": "Assets & Maintenance",
+    "slug": "maintenance-cost-capture-to-settlement",
+    "path": "docs/business-processes/maintenance-cost-capture-to-settlement.md",
+    "diagram": "docs/business-processes/diagrams/maintenance-cost-capture-to-settlement.svg",
+    "stages": [
+      "Maintenance Cost Capture",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "BP-103",
+    "name": "Asset Warranty Claim to Recovery",
+    "category": "Assets & Maintenance",
+    "slug": "asset-warranty-claim-to-recovery",
+    "path": "docs/business-processes/asset-warranty-claim-to-recovery.md",
+    "diagram": "docs/business-processes/diagrams/asset-warranty-claim-to-recovery.svg",
+    "stages": [
+      "Asset Warranty Claim",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Recovery"
+    ]
+  },
+  {
+    "id": "BP-104",
+    "name": "Equipment Installation to Decommissioning",
+    "category": "Assets & Maintenance",
+    "slug": "equipment-installation-to-decommissioning",
+    "path": "docs/business-processes/equipment-installation-to-decommissioning.md",
+    "diagram": "docs/business-processes/diagrams/equipment-installation-to-decommissioning.svg",
+    "stages": [
+      "Equipment Installation",
+      "Assess asset condition",
+      "Plan work and resources",
+      "Execute maintenance",
+      "Confirm cost and status",
+      "Decommissioning"
+    ]
+  },
+  {
+    "id": "BP-105",
+    "name": "Project Proposal to Approval",
+    "category": "Projects & Services",
+    "slug": "project-proposal-to-approval",
+    "path": "docs/business-processes/project-proposal-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/project-proposal-to-approval.svg",
+    "stages": [
+      "Project Proposal",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-106",
+    "name": "Project Planning to Baseline",
+    "category": "Projects & Services",
+    "slug": "project-planning-to-baseline",
+    "path": "docs/business-processes/project-planning-to-baseline.md",
+    "diagram": "docs/business-processes/diagrams/project-planning-to-baseline.svg",
+    "stages": [
+      "Project Planning",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Baseline"
+    ]
+  },
+  {
+    "id": "BP-107",
+    "name": "Work Package Assignment to Execution",
+    "category": "Projects & Services",
+    "slug": "work-package-assignment-to-execution",
+    "path": "docs/business-processes/work-package-assignment-to-execution.md",
+    "diagram": "docs/business-processes/diagrams/work-package-assignment-to-execution.svg",
+    "stages": [
+      "Work Package Assignment",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Execution"
+    ]
+  },
+  {
+    "id": "BP-108",
+    "name": "Timesheet Capture to Approval",
+    "category": "Projects & Services",
+    "slug": "timesheet-capture-to-approval",
+    "path": "docs/business-processes/timesheet-capture-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/timesheet-capture-to-approval.svg",
+    "stages": [
+      "Timesheet Capture",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-109",
+    "name": "Milestone Completion to Billing",
+    "category": "Projects & Services",
+    "slug": "milestone-completion-to-billing",
+    "path": "docs/business-processes/milestone-completion-to-billing.md",
+    "diagram": "docs/business-processes/diagrams/milestone-completion-to-billing.svg",
+    "stages": [
+      "Milestone Completion",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Billing"
+    ]
+  },
+  {
+    "id": "BP-110",
+    "name": "Service Contract to Service Order",
+    "category": "Projects & Services",
+    "slug": "service-contract-to-service-order",
+    "path": "docs/business-processes/service-contract-to-service-order.md",
+    "diagram": "docs/business-processes/diagrams/service-contract-to-service-order.svg",
+    "stages": [
+      "Service Contract",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Service Order"
+    ]
+  },
+  {
+    "id": "BP-111",
+    "name": "Service Order to Dispatch",
+    "category": "Projects & Services",
+    "slug": "service-order-to-dispatch",
+    "path": "docs/business-processes/service-order-to-dispatch.md",
+    "diagram": "docs/business-processes/diagrams/service-order-to-dispatch.svg",
+    "stages": [
+      "Service Order",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Dispatch"
+    ]
+  },
+  {
+    "id": "BP-112",
+    "name": "Service Delivery to Confirmation",
+    "category": "Projects & Services",
+    "slug": "service-delivery-to-confirmation",
+    "path": "docs/business-processes/service-delivery-to-confirmation.md",
+    "diagram": "docs/business-processes/diagrams/service-delivery-to-confirmation.svg",
+    "stages": [
+      "Service Delivery",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Confirmation"
+    ]
+  },
+  {
+    "id": "BP-113",
+    "name": "Service Confirmation to Billing",
+    "category": "Projects & Services",
+    "slug": "service-confirmation-to-billing",
+    "path": "docs/business-processes/service-confirmation-to-billing.md",
+    "diagram": "docs/business-processes/diagrams/service-confirmation-to-billing.svg",
+    "stages": [
+      "Service Confirmation",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Billing"
+    ]
+  },
+  {
+    "id": "BP-114",
+    "name": "Project Cost Capture to Settlement",
+    "category": "Projects & Services",
+    "slug": "project-cost-capture-to-settlement",
+    "path": "docs/business-processes/project-cost-capture-to-settlement.md",
+    "diagram": "docs/business-processes/diagrams/project-cost-capture-to-settlement.svg",
+    "stages": [
+      "Project Cost Capture",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "BP-115",
+    "name": "Change Request to Scope Update",
+    "category": "Projects & Services",
+    "slug": "change-request-to-scope-update",
+    "path": "docs/business-processes/change-request-to-scope-update.md",
+    "diagram": "docs/business-processes/diagrams/change-request-to-scope-update.svg",
+    "stages": [
+      "Change Request",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Scope Update"
+    ]
+  },
+  {
+    "id": "BP-116",
+    "name": "Project Closure to Lessons Learned",
+    "category": "Projects & Services",
+    "slug": "project-closure-to-lessons-learned",
+    "path": "docs/business-processes/project-closure-to-lessons-learned.md",
+    "diagram": "docs/business-processes/diagrams/project-closure-to-lessons-learned.svg",
+    "stages": [
+      "Project Closure",
+      "Define scope and responsibility",
+      "Plan resources",
+      "Execute work",
+      "Bill or settle",
+      "Lessons Learned"
+    ]
+  },
+  {
+    "id": "BP-117",
+    "name": "Workforce Request to Job Requisition",
+    "category": "Workforce & HR",
+    "slug": "workforce-request-to-job-requisition",
+    "path": "docs/business-processes/workforce-request-to-job-requisition.md",
+    "diagram": "docs/business-processes/diagrams/workforce-request-to-job-requisition.svg",
+    "stages": [
+      "Workforce Request",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Job Requisition"
+    ]
+  },
+  {
+    "id": "BP-118",
+    "name": "Candidate Application to Screening",
+    "category": "Workforce & HR",
+    "slug": "candidate-application-to-screening",
+    "path": "docs/business-processes/candidate-application-to-screening.md",
+    "diagram": "docs/business-processes/diagrams/candidate-application-to-screening.svg",
+    "stages": [
+      "Candidate Application",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Screening"
+    ]
+  },
+  {
+    "id": "BP-119",
+    "name": "Interview Scheduling to Feedback",
+    "category": "Workforce & HR",
+    "slug": "interview-scheduling-to-feedback",
+    "path": "docs/business-processes/interview-scheduling-to-feedback.md",
+    "diagram": "docs/business-processes/diagrams/interview-scheduling-to-feedback.svg",
+    "stages": [
+      "Interview Scheduling",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Feedback"
+    ]
+  },
+  {
+    "id": "BP-120",
+    "name": "Offer Creation to Acceptance",
+    "category": "Workforce & HR",
+    "slug": "offer-creation-to-acceptance",
+    "path": "docs/business-processes/offer-creation-to-acceptance.md",
+    "diagram": "docs/business-processes/diagrams/offer-creation-to-acceptance.svg",
+    "stages": [
+      "Offer Creation",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Acceptance"
+    ]
+  },
+  {
+    "id": "BP-121",
+    "name": "Employee Onboarding to Activation",
+    "category": "Workforce & HR",
+    "slug": "employee-onboarding-to-activation",
+    "path": "docs/business-processes/employee-onboarding-to-activation.md",
+    "diagram": "docs/business-processes/diagrams/employee-onboarding-to-activation.svg",
+    "stages": [
+      "Employee Onboarding",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Activation"
+    ]
+  },
+  {
+    "id": "BP-122",
+    "name": "Employee Master Data Change to Approval",
+    "category": "Workforce & HR",
+    "slug": "employee-master-data-change-to-approval",
+    "path": "docs/business-processes/employee-master-data-change-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/employee-master-data-change-to-approval.svg",
+    "stages": [
+      "Employee Master Data Change",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-123",
+    "name": "Time Recording to Approval",
+    "category": "Workforce & HR",
+    "slug": "time-recording-to-approval",
+    "path": "docs/business-processes/time-recording-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/time-recording-to-approval.svg",
+    "stages": [
+      "Time Recording",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-124",
+    "name": "Leave Request to Approval",
+    "category": "Workforce & HR",
+    "slug": "leave-request-to-approval",
+    "path": "docs/business-processes/leave-request-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/leave-request-to-approval.svg",
+    "stages": [
+      "Leave Request",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-125",
+    "name": "Payroll Preparation to Payment",
+    "category": "Workforce & HR",
+    "slug": "payroll-preparation-to-payment",
+    "path": "docs/business-processes/payroll-preparation-to-payment.md",
+    "diagram": "docs/business-processes/diagrams/payroll-preparation-to-payment.svg",
+    "stages": [
+      "Payroll Preparation",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Payment"
+    ]
+  },
+  {
+    "id": "BP-126",
+    "name": "Performance Goal Setting to Review",
+    "category": "Workforce & HR",
+    "slug": "performance-goal-setting-to-review",
+    "path": "docs/business-processes/performance-goal-setting-to-review.md",
+    "diagram": "docs/business-processes/diagrams/performance-goal-setting-to-review.svg",
+    "stages": [
+      "Performance Goal Setting",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Review"
+    ]
+  },
+  {
+    "id": "BP-127",
+    "name": "Learning Assignment to Completion",
+    "category": "Workforce & HR",
+    "slug": "learning-assignment-to-completion",
+    "path": "docs/business-processes/learning-assignment-to-completion.md",
+    "diagram": "docs/business-processes/diagrams/learning-assignment-to-completion.svg",
+    "stages": [
+      "Learning Assignment",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Completion"
+    ]
+  },
+  {
+    "id": "BP-128",
+    "name": "Employee Offboarding to Deactivation",
+    "category": "Workforce & HR",
+    "slug": "employee-offboarding-to-deactivation",
+    "path": "docs/business-processes/employee-offboarding-to-deactivation.md",
+    "diagram": "docs/business-processes/diagrams/employee-offboarding-to-deactivation.svg",
+    "stages": [
+      "Employee Offboarding",
+      "Validate person and policy",
+      "Route for approval",
+      "Update workforce record",
+      "Trigger downstream action",
+      "Deactivation"
+    ]
+  },
+  {
+    "id": "BP-129",
+    "name": "Strategic Plan to Demand Forecast",
+    "category": "Planning & Supply Chain",
+    "slug": "strategic-plan-to-demand-forecast",
+    "path": "docs/business-processes/strategic-plan-to-demand-forecast.md",
+    "diagram": "docs/business-processes/diagrams/strategic-plan-to-demand-forecast.svg",
+    "stages": [
+      "Strategic Plan",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Demand Forecast"
+    ]
+  },
+  {
+    "id": "BP-130",
+    "name": "Demand Forecast to Supply Plan",
+    "category": "Planning & Supply Chain",
+    "slug": "demand-forecast-to-supply-plan",
+    "path": "docs/business-processes/demand-forecast-to-supply-plan.md",
+    "diagram": "docs/business-processes/diagrams/demand-forecast-to-supply-plan.svg",
+    "stages": [
+      "Demand Forecast",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Supply Plan"
+    ]
+  },
+  {
+    "id": "BP-131",
+    "name": "Supply Plan to Procurement Proposal",
+    "category": "Planning & Supply Chain",
+    "slug": "supply-plan-to-procurement-proposal",
+    "path": "docs/business-processes/supply-plan-to-procurement-proposal.md",
+    "diagram": "docs/business-processes/diagrams/supply-plan-to-procurement-proposal.svg",
+    "stages": [
+      "Supply Plan",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Procurement Proposal"
+    ]
+  },
+  {
+    "id": "BP-132",
+    "name": "Supply Plan to Production Proposal",
+    "category": "Planning & Supply Chain",
+    "slug": "supply-plan-to-production-proposal",
+    "path": "docs/business-processes/supply-plan-to-production-proposal.md",
+    "diagram": "docs/business-processes/diagrams/supply-plan-to-production-proposal.svg",
+    "stages": [
+      "Supply Plan",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Production Proposal"
+    ]
+  },
+  {
+    "id": "BP-133",
+    "name": "Sales and Operations Planning Cycle",
+    "category": "Planning & Supply Chain",
+    "slug": "sales-and-operations-planning-cycle",
+    "path": "docs/business-processes/sales-and-operations-planning-cycle.md",
+    "diagram": "docs/business-processes/diagrams/sales-and-operations-planning-cycle.svg",
+    "stages": [
+      "Request",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Completion"
+    ]
+  },
+  {
+    "id": "BP-134",
+    "name": "Material Requirements Planning to Exception",
+    "category": "Planning & Supply Chain",
+    "slug": "material-requirements-planning-to-exception",
+    "path": "docs/business-processes/material-requirements-planning-to-exception.md",
+    "diagram": "docs/business-processes/diagrams/material-requirements-planning-to-exception.svg",
+    "stages": [
+      "Material Requirements Planning",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Exception"
+    ]
+  },
+  {
+    "id": "BP-135",
+    "name": "Replenishment Proposal to Order",
+    "category": "Planning & Supply Chain",
+    "slug": "replenishment-proposal-to-order",
+    "path": "docs/business-processes/replenishment-proposal-to-order.md",
+    "diagram": "docs/business-processes/diagrams/replenishment-proposal-to-order.svg",
+    "stages": [
+      "Replenishment Proposal",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Order"
+    ]
+  },
+  {
+    "id": "BP-136",
+    "name": "Allocation Planning to Fulfillment",
+    "category": "Planning & Supply Chain",
+    "slug": "allocation-planning-to-fulfillment",
+    "path": "docs/business-processes/allocation-planning-to-fulfillment.md",
+    "diagram": "docs/business-processes/diagrams/allocation-planning-to-fulfillment.svg",
+    "stages": [
+      "Allocation Planning",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "BP-137",
+    "name": "Capacity Planning to Constraint Resolution",
+    "category": "Planning & Supply Chain",
+    "slug": "capacity-planning-to-constraint-resolution",
+    "path": "docs/business-processes/capacity-planning-to-constraint-resolution.md",
+    "diagram": "docs/business-processes/diagrams/capacity-planning-to-constraint-resolution.svg",
+    "stages": [
+      "Capacity Planning",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Constraint Resolution"
+    ]
+  },
+  {
+    "id": "BP-138",
+    "name": "Scenario Planning to Decision",
+    "category": "Planning & Supply Chain",
+    "slug": "scenario-planning-to-decision",
+    "path": "docs/business-processes/scenario-planning-to-decision.md",
+    "diagram": "docs/business-processes/diagrams/scenario-planning-to-decision.svg",
+    "stages": [
+      "Scenario Planning",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Decision"
+    ]
+  },
+  {
+    "id": "BP-139",
+    "name": "Forecast Consumption to Rebalance",
+    "category": "Planning & Supply Chain",
+    "slug": "forecast-consumption-to-rebalance",
+    "path": "docs/business-processes/forecast-consumption-to-rebalance.md",
+    "diagram": "docs/business-processes/diagrams/forecast-consumption-to-rebalance.svg",
+    "stages": [
+      "Forecast Consumption",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Rebalance"
+    ]
+  },
+  {
+    "id": "BP-140",
+    "name": "Supply Chain Exception to Recovery",
+    "category": "Planning & Supply Chain",
+    "slug": "supply-chain-exception-to-recovery",
+    "path": "docs/business-processes/supply-chain-exception-to-recovery.md",
+    "diagram": "docs/business-processes/diagrams/supply-chain-exception-to-recovery.svg",
+    "stages": [
+      "Supply Chain Exception",
+      "Collect planning signals",
+      "Generate proposal",
+      "Resolve constraints",
+      "Release executable plan",
+      "Recovery"
+    ]
+  },
+  {
+    "id": "BP-141",
+    "name": "Policy Draft to Publication",
+    "category": "Governance Risk Data",
+    "slug": "policy-draft-to-publication",
+    "path": "docs/business-processes/policy-draft-to-publication.md",
+    "diagram": "docs/business-processes/diagrams/policy-draft-to-publication.svg",
+    "stages": [
+      "Policy Draft",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Publication"
+    ]
+  },
+  {
+    "id": "BP-142",
+    "name": "Control Design to Test",
+    "category": "Governance Risk Data",
+    "slug": "control-design-to-test",
+    "path": "docs/business-processes/control-design-to-test.md",
+    "diagram": "docs/business-processes/diagrams/control-design-to-test.svg",
+    "stages": [
+      "Control Design",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Test"
+    ]
+  },
+  {
+    "id": "BP-143",
+    "name": "Risk Identification to Mitigation",
+    "category": "Governance Risk Data",
+    "slug": "risk-identification-to-mitigation",
+    "path": "docs/business-processes/risk-identification-to-mitigation.md",
+    "diagram": "docs/business-processes/diagrams/risk-identification-to-mitigation.svg",
+    "stages": [
+      "Risk Identification",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Mitigation"
+    ]
+  },
+  {
+    "id": "BP-144",
+    "name": "Audit Finding to Remediation",
+    "category": "Governance Risk Data",
+    "slug": "audit-finding-to-remediation",
+    "path": "docs/business-processes/audit-finding-to-remediation.md",
+    "diagram": "docs/business-processes/diagrams/audit-finding-to-remediation.svg",
+    "stages": [
+      "Audit Finding",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Remediation"
+    ]
+  },
+  {
+    "id": "BP-145",
+    "name": "Access Request to Approval",
+    "category": "Governance Risk Data",
+    "slug": "access-request-to-approval",
+    "path": "docs/business-processes/access-request-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/access-request-to-approval.svg",
+    "stages": [
+      "Access Request",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-146",
+    "name": "Role Design to Assignment",
+    "category": "Governance Risk Data",
+    "slug": "role-design-to-assignment",
+    "path": "docs/business-processes/role-design-to-assignment.md",
+    "diagram": "docs/business-processes/diagrams/role-design-to-assignment.svg",
+    "stages": [
+      "Role Design",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Assignment"
+    ]
+  },
+  {
+    "id": "BP-147",
+    "name": "Master Data Request to Approval",
+    "category": "Governance Risk Data",
+    "slug": "master-data-request-to-approval",
+    "path": "docs/business-processes/master-data-request-to-approval.md",
+    "diagram": "docs/business-processes/diagrams/master-data-request-to-approval.svg",
+    "stages": [
+      "Master Data Request",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Approval"
+    ]
+  },
+  {
+    "id": "BP-148",
+    "name": "Data Quality Issue to Correction",
+    "category": "Governance Risk Data",
+    "slug": "data-quality-issue-to-correction",
+    "path": "docs/business-processes/data-quality-issue-to-correction.md",
+    "diagram": "docs/business-processes/diagrams/data-quality-issue-to-correction.svg",
+    "stages": [
+      "Data Quality Issue",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Correction"
+    ]
+  },
+  {
+    "id": "BP-149",
+    "name": "Integration Event to Error Resolution",
+    "category": "Governance Risk Data",
+    "slug": "integration-event-to-error-resolution",
+    "path": "docs/business-processes/integration-event-to-error-resolution.md",
+    "diagram": "docs/business-processes/diagrams/integration-event-to-error-resolution.svg",
+    "stages": [
+      "Integration Event",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Error Resolution"
+    ]
+  },
+  {
+    "id": "BP-150",
+    "name": "Change Request to Production Release",
+    "category": "Governance Risk Data",
+    "slug": "change-request-to-production-release",
+    "path": "docs/business-processes/change-request-to-production-release.md",
+    "diagram": "docs/business-processes/diagrams/change-request-to-production-release.svg",
+    "stages": [
+      "Change Request",
+      "Assess request or issue",
+      "Route for control approval",
+      "Apply decision",
+      "Record evidence and close",
+      "Production Release"
+    ]
+  }
+]

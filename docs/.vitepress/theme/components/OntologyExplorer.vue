@@ -123,8 +123,10 @@ import { parseRdfToGraphs, type GraphLink, type GraphNode, type ParsedGraph } fr
 type ViewMode = 'friendly' | 'ontology' | 'raw'
 
 const samples = [
-  { name: 'Retail ontology', path: '/samples/retail-ontology.ttl' },
-  { name: 'People RDF', path: '/samples/people-rdf.ttl' }
+  { name: 'Finance ledger', path: '/samples/finance-ledger.ttl' },
+  { name: 'Material master', path: '/samples/material-master.ttl' },
+  { name: 'Procure to invoice', path: '/samples/procurement-to-invoice.ttl' },
+  { name: 'Inventory movement', path: '/samples/inventory-movement.ttl' }
 ]
 
 const graphEl = ref<HTMLElement | null>(null)

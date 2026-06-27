@@ -674,3 +674,93 @@ html.ng-explorer-route .ng-table-wrap {
   display: none !important;
 }
 */
+
+/* =========================================================
+   Home page embedded explorer
+   ========================================================= */
+
+.ng-home-page .VPHome {
+  padding-bottom: 0 !important;
+}
+
+.ng-home-page .VPHomeFeatures {
+  padding-bottom: 48px !important;
+}
+
+.home-explorer-section {
+  width: min(100% - 48px, 1680px);
+  margin: 48px auto 96px;
+}
+
+.home-explorer-heading {
+  max-width: 900px;
+  margin-bottom: 28px;
+}
+
+.home-explorer-eyebrow {
+  margin: 0 0 8px;
+  color: #7dd3fc;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.home-explorer-heading h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.home-explorer-heading p {
+  margin: 16px 0 0;
+  max-width: 760px;
+  color: var(--vp-c-text-2);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Make embedded explorer use the home page width */
+.home-explorer-section .ng-explorer {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Give the graph a strong home-page presence */
+.home-explorer-section .ng-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 520px) !important;
+}
+
+.home-explorer-section .ng-graph {
+  min-height: 680px !important;
+  height: 68vh !important;
+}
+
+.home-explorer-section .ng-details {
+  min-height: 680px !important;
+  max-height: 68vh !important;
+  overflow: auto !important;
+}
+
+@media (max-width: 1100px) {
+  .home-explorer-section {
+    width: min(100% - 32px, 1680px);
+    margin-top: 32px;
+  }
+
+  .home-explorer-section .ng-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-explorer-section .ng-graph {
+    min-height: 520px !important;
+    height: 60vh !important;
+  }
+
+  .home-explorer-section .ng-details {
+    min-height: auto !important;
+    max-height: none !important;
+  }
+}

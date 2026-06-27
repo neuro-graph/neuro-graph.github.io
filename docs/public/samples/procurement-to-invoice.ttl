@@ -1,0 +1,82 @@
+@prefix ng: <https://neuro-graph.dev/ontology#> .
+@prefix ex: <https://neuro-graph.dev/sample/procure#> .
+@prefix mat: <https://neuro-graph.dev/sample/material#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ng:Supplier a owl:Class ; rdfs:label "Supplier" ; rdfs:comment "A party that provides goods or services." .
+ng:PurchaseOrder a owl:Class ; rdfs:label "Purchase Order" ; rdfs:comment "A commercial request to buy goods or services." .
+ng:PurchaseOrderLine a owl:Class ; rdfs:label "Purchase Order Line" ; rdfs:comment "A line item inside a purchase order." .
+ng:GoodsReceipt a owl:Class ; rdfs:label "Goods Receipt" ; rdfs:comment "A confirmation that goods were received." .
+ng:SupplierInvoice a owl:Class ; rdfs:label "Supplier Invoice" ; rdfs:comment "An invoice received from a supplier." .
+ng:PaymentRun a owl:Class ; rdfs:label "Payment Run" ; rdfs:comment "A batch process that pays approved invoices." .
+ng:MaterialRecord a owl:Class ; rdfs:label "Material Record" .
+
+ng:issuedToSupplier a owl:ObjectProperty ; rdfs:label "issued to supplier" ; rdfs:domain ng:PurchaseOrder ; rdfs:range ng:Supplier .
+ng:hasPurchaseLine a owl:ObjectProperty ; rdfs:label "has purchase line" ; rdfs:domain ng:PurchaseOrder ; rdfs:range ng:PurchaseOrderLine .
+ng:ordersMaterial a owl:ObjectProperty ; rdfs:label "orders material" ; rdfs:domain ng:PurchaseOrderLine ; rdfs:range ng:MaterialRecord .
+ng:receivedAgainstOrder a owl:ObjectProperty ; rdfs:label "received against order" ; rdfs:domain ng:GoodsReceipt ; rdfs:range ng:PurchaseOrder .
+ng:receivedMaterial a owl:ObjectProperty ; rdfs:label "received material" ; rdfs:domain ng:GoodsReceipt ; rdfs:range ng:MaterialRecord .
+ng:invoiceReferencesOrder a owl:ObjectProperty ; rdfs:label "invoice references order" ; rdfs:domain ng:SupplierInvoice ; rdfs:range ng:PurchaseOrder .
+ng:invoiceReferencesReceipt a owl:ObjectProperty ; rdfs:label "invoice references receipt" ; rdfs:domain ng:SupplierInvoice ; rdfs:range ng:GoodsReceipt .
+ng:paidByRun a owl:ObjectProperty ; rdfs:label "paid by run" ; rdfs:domain ng:SupplierInvoice ; rdfs:range ng:PaymentRun .
+
+ng:documentNumber a owl:DatatypeProperty ; rdfs:label "document number" ; rdfs:range xsd:string .
+ng:quantity a owl:DatatypeProperty ; rdfs:label "quantity" ; rdfs:range xsd:decimal .
+ng:amount a owl:DatatypeProperty ; rdfs:label "amount" ; rdfs:range xsd:decimal .
+ng:currency a owl:DatatypeProperty ; rdfs:label "currency" ; rdfs:range xsd:string .
+ng:documentDate a owl:DatatypeProperty ; rdfs:label "document date" ; rdfs:range xsd:date .
+
+ex:GlobalComponentsLtd a owl:NamedIndividual, ng:Supplier ;
+  rdfs:label "Global Components Ltd" ;
+  rdfs:comment "Preferred supplier for electronic components." .
+
+mat:MAT-100045 a owl:NamedIndividual, ng:MaterialRecord ;
+  rdfs:label "Smart Sensor Gateway" .
+
+mat:MAT-200017 a owl:NamedIndividual, ng:MaterialRecord ;
+  rdfs:label "Conductive Resin" .
+
+ex:PO-45001234 a owl:NamedIndividual, ng:PurchaseOrder ;
+  rdfs:label "Purchase Order 45001234" ;
+  ng:documentNumber "45001234" ;
+  ng:documentDate "2025-04-02"^^xsd:date ;
+  ng:issuedToSupplier ex:GlobalComponentsLtd ;
+  ng:hasPurchaseLine ex:PO-45001234-10, ex:PO-45001234-20 .
+
+ex:PO-45001234-10 a owl:NamedIndividual, ng:PurchaseOrderLine ;
+  rdfs:label "PO line 10 - gateways" ;
+  ng:quantity "40"^^xsd:decimal ;
+  ng:amount "3380.00"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:ordersMaterial mat:MAT-100045 .
+
+ex:PO-45001234-20 a owl:NamedIndividual, ng:PurchaseOrderLine ;
+  rdfs:label "PO line 20 - resin" ;
+  ng:quantity "120"^^xsd:decimal ;
+  ng:amount "1482.00"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:ordersMaterial mat:MAT-200017 .
+
+ex:GR-50008001 a owl:NamedIndividual, ng:GoodsReceipt ;
+  rdfs:label "Goods Receipt 50008001" ;
+  ng:documentNumber "50008001" ;
+  ng:documentDate "2025-04-06"^^xsd:date ;
+  ng:receivedAgainstOrder ex:PO-45001234 ;
+  ng:receivedMaterial mat:MAT-100045, mat:MAT-200017 .
+
+ex:INV-9800451 a owl:NamedIndividual, ng:SupplierInvoice ;
+  rdfs:label "Supplier Invoice 9800451" ;
+  ng:documentNumber "9800451" ;
+  ng:documentDate "2025-04-09"^^xsd:date ;
+  ng:amount "4862.00"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:invoiceReferencesOrder ex:PO-45001234 ;
+  ng:invoiceReferencesReceipt ex:GR-50008001 .
+
+ex:PAYRUN-2025-04-15 a owl:NamedIndividual, ng:PaymentRun ;
+  rdfs:label "Payment Run 2025-04-15" .
+
+ex:INV-9800451 ng:paidByRun ex:PAYRUN-2025-04-15 .

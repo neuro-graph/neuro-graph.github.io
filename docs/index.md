@@ -27,3 +27,23 @@ features:
     title: Fast developer docs
     details: Built with VitePress, local search, sidebar navigation, dark mode, and GitHub Pages deployment.
 ---
+<div class="home-explorer-section">
+
+<div class="home-explorer-heading">
+
+<p class="home-explorer-eyebrow">Interactive RDF / OWL Explorer</p>
+
+<h2>Try Neuro Graph directly in the docs</h2>
+
+<p>
+Choose a sample ontology, upload RDF/OWL data, switch between friendly, ontology,
+and raw triple views, and inspect each node with relationships and metadata.
+</p>
+
+</div>
+
+<ClientOnly>
+  <OntologyExplorer />
+</ClientOnly>
+
+</div>

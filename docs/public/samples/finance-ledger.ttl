@@ -1,0 +1,143 @@
+@prefix ng: <https://neuro-graph.dev/ontology#> .
+@prefix ex: <https://neuro-graph.dev/sample/finance#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ng:BusinessEntity a owl:Class ;
+  rdfs:label "Business Entity" ;
+  rdfs:comment "A legal or operating entity that owns financial transactions." .
+
+ng:Ledger a owl:Class ;
+  rdfs:label "Ledger" ;
+  rdfs:comment "A book of financial records used for reporting and reconciliation." .
+
+ng:Account a owl:Class ;
+  rdfs:label "General Ledger Account" ;
+  rdfs:comment "An account used to classify financial postings." .
+
+ng:FiscalPeriod a owl:Class ;
+  rdfs:label "Fiscal Period" ;
+  rdfs:comment "A reporting period such as a month, quarter, or year." .
+
+ng:JournalEntry a owl:Class ;
+  rdfs:label "Journal Entry" ;
+  rdfs:comment "A financial document containing debit and credit lines." .
+
+ng:JournalLine a owl:Class ;
+  rdfs:label "Journal Line" ;
+  rdfs:comment "A single debit or credit posting inside a journal entry." .
+
+ng:CostCenter a owl:Class ;
+  rdfs:label "Cost Center" ;
+  rdfs:comment "An organizational area where costs are collected." .
+
+ng:ProfitCenter a owl:Class ;
+  rdfs:label "Profit Center" ;
+  rdfs:comment "An organizational area used to analyze revenue and margin." .
+
+ng:controlsLedger a owl:ObjectProperty ;
+  rdfs:label "controls ledger" ;
+  rdfs:domain ng:BusinessEntity ;
+  rdfs:range ng:Ledger .
+
+ng:postedToLedger a owl:ObjectProperty ;
+  rdfs:label "posted to ledger" ;
+  rdfs:domain ng:JournalEntry ;
+  rdfs:range ng:Ledger .
+
+ng:hasJournalLine a owl:ObjectProperty ;
+  rdfs:label "has journal line" ;
+  rdfs:domain ng:JournalEntry ;
+  rdfs:range ng:JournalLine .
+
+ng:postedToAccount a owl:ObjectProperty ;
+  rdfs:label "posted to account" ;
+  rdfs:domain ng:JournalLine ;
+  rdfs:range ng:Account .
+
+ng:belongsToPeriod a owl:ObjectProperty ;
+  rdfs:label "belongs to period" ;
+  rdfs:domain ng:JournalEntry ;
+  rdfs:range ng:FiscalPeriod .
+
+ng:assignedCostCenter a owl:ObjectProperty ;
+  rdfs:label "assigned cost center" ;
+  rdfs:domain ng:JournalLine ;
+  rdfs:range ng:CostCenter .
+
+ng:assignedProfitCenter a owl:ObjectProperty ;
+  rdfs:label "assigned profit center" ;
+  rdfs:domain ng:JournalLine ;
+  rdfs:range ng:ProfitCenter .
+
+ng:amount a owl:DatatypeProperty ;
+  rdfs:label "amount" ;
+  rdfs:domain ng:JournalLine ;
+  rdfs:range xsd:decimal .
+
+ng:currency a owl:DatatypeProperty ;
+  rdfs:label "currency" ;
+  rdfs:domain ng:JournalLine ;
+  rdfs:range xsd:string .
+
+ng:postingDate a owl:DatatypeProperty ;
+  rdfs:label "posting date" ;
+  rdfs:domain ng:JournalEntry ;
+  rdfs:range xsd:date .
+
+ex:NorthwindHoldings a owl:NamedIndividual, ng:BusinessEntity ;
+  rdfs:label "Northwind Holdings" ;
+  rdfs:comment "Example organization used for finance graph exploration." ;
+  ng:controlsLedger ex:CorporateLedger .
+
+ex:CorporateLedger a owl:NamedIndividual, ng:Ledger ;
+  rdfs:label "Corporate Ledger" .
+
+ex:FY2025M03 a owl:NamedIndividual, ng:FiscalPeriod ;
+  rdfs:label "FY2025 Period 03" .
+
+ex:RevenueAccount a owl:NamedIndividual, ng:Account ;
+  rdfs:label "400000 Product Revenue" .
+
+ex:ReceivablesAccount a owl:NamedIndividual, ng:Account ;
+  rdfs:label "120000 Trade Receivables" .
+
+ex:TaxPayableAccount a owl:NamedIndividual, ng:Account ;
+  rdfs:label "240000 Output Tax Payable" .
+
+ex:CostCenterSales a owl:NamedIndividual, ng:CostCenter ;
+  rdfs:label "Sales Operations" .
+
+ex:ProfitCenterDevices a owl:NamedIndividual, ng:ProfitCenter ;
+  rdfs:label "Connected Devices" .
+
+ex:JE2025-000941 a owl:NamedIndividual, ng:JournalEntry ;
+  rdfs:label "Journal Entry 2025-000941" ;
+  ng:postingDate "2025-03-18"^^xsd:date ;
+  ng:postedToLedger ex:CorporateLedger ;
+  ng:belongsToPeriod ex:FY2025M03 ;
+  ng:hasJournalLine ex:JE2025-000941-L1, ex:JE2025-000941-L2, ex:JE2025-000941-L3 .
+
+ex:JE2025-000941-L1 a owl:NamedIndividual, ng:JournalLine ;
+  rdfs:label "Debit receivables" ;
+  ng:amount "11900.00"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:postedToAccount ex:ReceivablesAccount ;
+  ng:assignedProfitCenter ex:ProfitCenterDevices .
+
+ex:JE2025-000941-L2 a owl:NamedIndividual, ng:JournalLine ;
+  rdfs:label "Credit product revenue" ;
+  ng:amount "10000.00"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:postedToAccount ex:RevenueAccount ;
+  ng:assignedCostCenter ex:CostCenterSales ;
+  ng:assignedProfitCenter ex:ProfitCenterDevices .
+
+ex:JE2025-000941-L3 a owl:NamedIndividual, ng:JournalLine ;
+  rdfs:label "Credit output tax" ;
+  ng:amount "1900.00"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:postedToAccount ex:TaxPayableAccount ;
+  ng:assignedProfitCenter ex:ProfitCenterDevices .

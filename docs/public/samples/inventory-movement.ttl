@@ -1,0 +1,98 @@
+@prefix ng: <https://neuro-graph.dev/ontology#> .
+@prefix ex: <https://neuro-graph.dev/sample/inventory#> .
+@prefix mat: <https://neuro-graph.dev/sample/material#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ng:MaterialRecord a owl:Class ; rdfs:label "Material Record" .
+ng:Facility a owl:Class ; rdfs:label "Facility" .
+ng:WarehouseLocation a owl:Class ; rdfs:label "Warehouse Location" .
+ng:InventoryBatch a owl:Class ; rdfs:label "Inventory Batch" ; rdfs:comment "A batch or lot of stock with a shared production or receipt identity." .
+ng:StockBalance a owl:Class ; rdfs:label "Stock Balance" ; rdfs:comment "Current stock quantity for a material at a location." .
+ng:InventoryMovement a owl:Class ; rdfs:label "Inventory Movement" ; rdfs:comment "A transaction that changes inventory quantity or location." .
+ng:MovementReason a owl:Class ; rdfs:label "Movement Reason" ; rdfs:comment "A business reason for a stock movement." .
+
+ng:forMaterial a owl:ObjectProperty ; rdfs:label "for material" ; rdfs:domain ng:StockBalance ; rdfs:range ng:MaterialRecord .
+ng:locatedAtFacility a owl:ObjectProperty ; rdfs:label "located at facility" ; rdfs:domain ng:StockBalance ; rdfs:range ng:Facility .
+ng:locatedAtWarehouseLocation a owl:ObjectProperty ; rdfs:label "located at warehouse location" ; rdfs:domain ng:StockBalance ; rdfs:range ng:WarehouseLocation .
+ng:hasBatch a owl:ObjectProperty ; rdfs:label "has batch" ; rdfs:domain ng:StockBalance ; rdfs:range ng:InventoryBatch .
+ng:movesMaterial a owl:ObjectProperty ; rdfs:label "moves material" ; rdfs:domain ng:InventoryMovement ; rdfs:range ng:MaterialRecord .
+ng:fromLocation a owl:ObjectProperty ; rdfs:label "from location" ; rdfs:domain ng:InventoryMovement ; rdfs:range ng:WarehouseLocation .
+ng:toLocation a owl:ObjectProperty ; rdfs:label "to location" ; rdfs:domain ng:InventoryMovement ; rdfs:range ng:WarehouseLocation .
+ng:movementReason a owl:ObjectProperty ; rdfs:label "movement reason" ; rdfs:domain ng:InventoryMovement ; rdfs:range ng:MovementReason .
+
+ng:quantity a owl:DatatypeProperty ; rdfs:label "quantity" ; rdfs:range xsd:decimal .
+ng:unit a owl:DatatypeProperty ; rdfs:label "unit" ; rdfs:range xsd:string .
+ng:movementDate a owl:DatatypeProperty ; rdfs:label "movement date" ; rdfs:range xsd:date .
+ng:batchNumber a owl:DatatypeProperty ; rdfs:label "batch number" ; rdfs:range xsd:string .
+
+mat:MAT-100045 a owl:NamedIndividual, ng:MaterialRecord ; rdfs:label "Smart Sensor Gateway" .
+mat:MAT-200017 a owl:NamedIndividual, ng:MaterialRecord ; rdfs:label "Conductive Resin" .
+
+ex:MainDistributionCenter a owl:NamedIndividual, ng:Facility ; rdfs:label "Main Distribution Center" .
+ex:ProductionSiteA a owl:NamedIndividual, ng:Facility ; rdfs:label "Production Site A" .
+ex:Aisle7Bin12 a owl:NamedIndividual, ng:WarehouseLocation ; rdfs:label "Aisle 7 / Bin 12" .
+ex:QualityHoldZone a owl:NamedIndividual, ng:WarehouseLocation ; rdfs:label "Quality Hold Zone" .
+ex:BulkStorageB3 a owl:NamedIndividual, ng:WarehouseLocation ; rdfs:label "Bulk Storage B3" .
+ex:AssemblyLineFeed a owl:NamedIndividual, ng:WarehouseLocation ; rdfs:label "Assembly Line Feed" .
+
+ex:Batch-GW-2025-041 a owl:NamedIndividual, ng:InventoryBatch ;
+  rdfs:label "Gateway Batch 2025-041" ;
+  ng:batchNumber "GW-2025-041" .
+
+ex:Batch-RES-2025-088 a owl:NamedIndividual, ng:InventoryBatch ;
+  rdfs:label "Resin Batch 2025-088" ;
+  ng:batchNumber "RES-2025-088" .
+
+ex:InitialReceipt a owl:NamedIndividual, ng:MovementReason ; rdfs:label "Initial Receipt" .
+ex:QualityInspection a owl:NamedIndividual, ng:MovementReason ; rdfs:label "Quality Inspection" .
+ex:ProductionConsumption a owl:NamedIndividual, ng:MovementReason ; rdfs:label "Production Consumption" .
+
+ex:Stock-GW-MDC-A7B12 a owl:NamedIndividual, ng:StockBalance ;
+  rdfs:label "Gateway stock at Aisle 7 / Bin 12" ;
+  ng:quantity "40"^^xsd:decimal ;
+  ng:unit "EA" ;
+  ng:forMaterial mat:MAT-100045 ;
+  ng:locatedAtFacility ex:MainDistributionCenter ;
+  ng:locatedAtWarehouseLocation ex:Aisle7Bin12 ;
+  ng:hasBatch ex:Batch-GW-2025-041 .
+
+ex:Stock-RES-PSA-B3 a owl:NamedIndividual, ng:StockBalance ;
+  rdfs:label "Resin stock at Bulk Storage B3" ;
+  ng:quantity "120"^^xsd:decimal ;
+  ng:unit "KG" ;
+  ng:forMaterial mat:MAT-200017 ;
+  ng:locatedAtFacility ex:ProductionSiteA ;
+  ng:locatedAtWarehouseLocation ex:BulkStorageB3 ;
+  ng:hasBatch ex:Batch-RES-2025-088 .
+
+ex:MVT-700001 a owl:NamedIndividual, ng:InventoryMovement ;
+  rdfs:label "Movement 700001" ;
+  ng:movementDate "2025-04-06"^^xsd:date ;
+  ng:quantity "40"^^xsd:decimal ;
+  ng:unit "EA" ;
+  ng:movesMaterial mat:MAT-100045 ;
+  ng:toLocation ex:Aisle7Bin12 ;
+  ng:movementReason ex:InitialReceipt .
+
+ex:MVT-700002 a owl:NamedIndividual, ng:InventoryMovement ;
+  rdfs:label "Movement 700002" ;
+  ng:movementDate "2025-04-07"^^xsd:date ;
+  ng:quantity "5"^^xsd:decimal ;
+  ng:unit "EA" ;
+  ng:movesMaterial mat:MAT-100045 ;
+  ng:fromLocation ex:Aisle7Bin12 ;
+  ng:toLocation ex:QualityHoldZone ;
+  ng:movementReason ex:QualityInspection .
+
+ex:MVT-700003 a owl:NamedIndividual, ng:InventoryMovement ;
+  rdfs:label "Movement 700003" ;
+  ng:movementDate "2025-04-08"^^xsd:date ;
+  ng:quantity "25"^^xsd:decimal ;
+  ng:unit "KG" ;
+  ng:movesMaterial mat:MAT-200017 ;
+  ng:fromLocation ex:BulkStorageB3 ;
+  ng:toLocation ex:AssemblyLineFeed ;
+  ng:movementReason ex:ProductionConsumption .

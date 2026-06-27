@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { businessProcessSidebar } from './businessProcessSidebar'
 
 export default defineConfig({
   title: 'Neuro Graph',
@@ -23,40 +24,45 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Docs', link: '/docs/' },
-      { text: 'Getting Started', link: '/getting-started/' },
-      { text: 'Concepts', link: '/concepts/' },
-      { text: 'Explorer', link: '/explorer/' },
-      { text: 'API', link: '/api/' },
-      { text: 'Community', link: '/community/' }
-    ],
+          { text: 'Docs', link: '/docs' },
+          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Concepts', link: '/concepts/' },
+          { text: 'Business Processes', link: '/business-processes/README' },
+          { text: 'Explorer', link: '/explorer/' },
+          { text: 'API', link: '/api' },
+          { text: 'Community', link: '/community' }
+       ],
 
-    sidebar: [
-      {
-        text: 'Overview',
-        items: [
-          { text: 'Introduction', link: '/docs/' },
-          { text: 'Getting Started', link: '/getting-started/' }
+    sidebar: {
+        '/business-processes/': businessProcessSidebar,
+
+        '/': [
+          {
+            text: 'Overview',
+            items: [
+              { text: 'Introduction', link: '/docs' },
+              { text: 'Getting Started', link: '/getting-started' }
+            ]
+          },
+          {
+            text: 'Concepts',
+            items: [
+              { text: 'Knowledge Graphs', link: '/concepts/' },
+              { text: 'Entities', link: '/concepts/entities' },
+              { text: 'Relationships', link: '/concepts/relationships' },
+              { text: 'Graph Queries', link: '/concepts/queries' },
+              { text: 'RDF/OWL Explorer', link: '/explorer/' }
+            ]
+          },
+          {
+            text: 'Developers',
+            items: [
+              { text: 'API', link: '/api' },
+              { text: 'Community', link: '/community' }
+            ]
+          }
         ]
-      },
-      {
-        text: 'Concepts',
-        items: [
-          { text: 'Knowledge Graphs', link: '/concepts/' },
-          { text: 'Entities', link: '/concepts/entities' },
-          { text: 'Relationships', link: '/concepts/relationships' },
-          { text: 'Graph Queries', link: '/concepts/queries' },
-          { text: 'RDF/OWL Explorer', link: '/explorer/' }
-        ]
-      },
-      {
-        text: 'Developers',
-        items: [
-          { text: 'API', link: '/api/' },
-          { text: 'Community', link: '/community/' }
-        ]
-      }
-    ],
+},
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/neuro-graph/neuro-graph.github.io' }

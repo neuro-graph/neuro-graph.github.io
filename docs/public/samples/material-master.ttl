@@ -1,0 +1,148 @@
+@prefix ng: <https://neuro-graph.dev/ontology#> .
+@prefix ex: <https://neuro-graph.dev/sample/material#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ng:MaterialRecord a owl:Class ;
+  rdfs:label "Material Record" ;
+  rdfs:comment "A master data record describing a product, component, or service item." .
+
+ng:MaterialType a owl:Class ;
+  rdfs:label "Material Type" ;
+  rdfs:comment "A category that controls how an item is planned, purchased, stocked, or sold." .
+
+ng:MaterialGroup a owl:Class ;
+  rdfs:label "Material Group" ;
+  rdfs:comment "A business grouping used for reporting and procurement." .
+
+ng:BaseUnit a owl:Class ;
+  rdfs:label "Base Unit" ;
+  rdfs:comment "The primary unit used to measure inventory quantity." .
+
+ng:Facility a owl:Class ;
+  rdfs:label "Facility" ;
+  rdfs:comment "A production, storage, or distribution site." .
+
+ng:WarehouseLocation a owl:Class ;
+  rdfs:label "Warehouse Location" ;
+  rdfs:comment "A storage area inside a facility." .
+
+ng:ValuationCategory a owl:Class ;
+  rdfs:label "Valuation Category" ;
+  rdfs:comment "A grouping used for inventory valuation and accounting treatment." .
+
+ng:hasMaterialType a owl:ObjectProperty ;
+  rdfs:label "has material type" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range ng:MaterialType .
+
+ng:belongsToMaterialGroup a owl:ObjectProperty ;
+  rdfs:label "belongs to material group" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range ng:MaterialGroup .
+
+ng:usesBaseUnit a owl:ObjectProperty ;
+  rdfs:label "uses base unit" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range ng:BaseUnit .
+
+ng:stockedAtFacility a owl:ObjectProperty ;
+  rdfs:label "stocked at facility" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range ng:Facility .
+
+ng:storedInLocation a owl:ObjectProperty ;
+  rdfs:label "stored in location" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range ng:WarehouseLocation .
+
+ng:valuedBy a owl:ObjectProperty ;
+  rdfs:label "valued by" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range ng:ValuationCategory .
+
+ng:materialNumber a owl:DatatypeProperty ;
+  rdfs:label "material number" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range xsd:string .
+
+ng:standardCost a owl:DatatypeProperty ;
+  rdfs:label "standard cost" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range xsd:decimal .
+
+ng:currency a owl:DatatypeProperty ;
+  rdfs:label "currency" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range xsd:string .
+
+ng:reorderPoint a owl:DatatypeProperty ;
+  rdfs:label "reorder point" ;
+  rdfs:domain ng:MaterialRecord ;
+  rdfs:range xsd:integer .
+
+ex:FinishedGood a owl:NamedIndividual, ng:MaterialType ;
+  rdfs:label "Finished Good" .
+
+ex:RawMaterial a owl:NamedIndividual, ng:MaterialType ;
+  rdfs:label "Raw Material" .
+
+ex:Electronics a owl:NamedIndividual, ng:MaterialGroup ;
+  rdfs:label "Electronics" .
+
+ex:Packaging a owl:NamedIndividual, ng:MaterialGroup ;
+  rdfs:label "Packaging" .
+
+ex:Each a owl:NamedIndividual, ng:BaseUnit ;
+  rdfs:label "Each" .
+
+ex:Kilogram a owl:NamedIndividual, ng:BaseUnit ;
+  rdfs:label "Kilogram" .
+
+ex:MainDistributionCenter a owl:NamedIndividual, ng:Facility ;
+  rdfs:label "Main Distribution Center" .
+
+ex:ProductionSiteA a owl:NamedIndividual, ng:Facility ;
+  rdfs:label "Production Site A" .
+
+ex:Aisle7Bin12 a owl:NamedIndividual, ng:WarehouseLocation ;
+  rdfs:label "Aisle 7 / Bin 12" .
+
+ex:BulkStorageB3 a owl:NamedIndividual, ng:WarehouseLocation ;
+  rdfs:label "Bulk Storage B3" .
+
+ex:StandardValuation a owl:NamedIndividual, ng:ValuationCategory ;
+  rdfs:label "Standard Valuation" .
+
+ex:MovingAverageValuation a owl:NamedIndividual, ng:ValuationCategory ;
+  rdfs:label "Moving Average Valuation" .
+
+ex:MAT-100045 a owl:NamedIndividual, ng:MaterialRecord ;
+  rdfs:label "Smart Sensor Gateway" ;
+  rdfs:comment "A finished product used in connected device scenarios." ;
+  ng:materialNumber "MAT-100045" ;
+  ng:standardCost "84.50"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:reorderPoint "150"^^xsd:integer ;
+  ng:hasMaterialType ex:FinishedGood ;
+  ng:belongsToMaterialGroup ex:Electronics ;
+  ng:usesBaseUnit ex:Each ;
+  ng:stockedAtFacility ex:MainDistributionCenter ;
+  ng:storedInLocation ex:Aisle7Bin12 ;
+  ng:valuedBy ex:StandardValuation .
+
+ex:MAT-200017 a owl:NamedIndividual, ng:MaterialRecord ;
+  rdfs:label "Conductive Resin" ;
+  rdfs:comment "A raw input material used during assembly." ;
+  ng:materialNumber "MAT-200017" ;
+  ng:standardCost "12.35"^^xsd:decimal ;
+  ng:currency "USD" ;
+  ng:reorderPoint "500"^^xsd:integer ;
+  ng:hasMaterialType ex:RawMaterial ;
+  ng:belongsToMaterialGroup ex:Packaging ;
+  ng:usesBaseUnit ex:Kilogram ;
+  ng:stockedAtFacility ex:ProductionSiteA ;
+  ng:storedInLocation ex:BulkStorageB3 ;
+  ng:valuedBy ex:MovingAverageValuation .
