@@ -1,6 +1,6 @@
-# Neuro Graph VitePress Docs
+# Neuro Graph  Docs
 
-Public documentation site for Neuro Graph, powered by VitePress.
+Public documentation site by Neuro Graph to Explain Knowledge Graph.
 
 ## Features
 
