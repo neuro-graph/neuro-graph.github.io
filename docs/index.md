@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Neuro Graph
-  text: Connect. Discover. Understand.
-  tagline: Open-source documentation for building, exploring, and explaining knowledge graphs with clear entity and relationship models.
+  text: Knowledge Graph Playground.
+  tagline: Open-source space for building, exploring, and explaining knowledge graphs with clear entity and relationship models.
   image:
     src: /logo.svg
     alt: Neuro Graph logo
@@ -16,24 +16,42 @@ hero:
       text: Read the Docs
       link: /docs/
 
-features:
-  - icon: 🧠
-    title: Entity-first knowledge
-    details: Model people, organizations, documents, systems, and concepts as connected graph entities.
-  - icon: 🔗
-    title: Relationship intelligence
-    details: Document how relationships are discovered, stored, queried, and explained.
-  - icon: ⚡
-    title: Fast developer docs
-    details: Built with VitePress, local search, sidebar navigation, dark mode, and GitHub Pages deployment.
 ---
+<div class="ng-home-features">
+
+<div class="ng-home-feature">
+  <div class="ng-home-feature-icon">
+    <ui5-icon name="overview-chart"></ui5-icon>
+  </div>
+  <h3>RDF/OWL Visualization</h3>
+  <p>Model people, organizations, documents, systems, and concepts as connected graph entities.</p>
+</div>
+
+<div class="ng-home-feature">
+  <div class="ng-home-feature-icon">
+    <ui5-icon name="chain-link"></ui5-icon>
+  </div>
+  <h3>Business Process & Entity correlation</h3>
+  <p>Generate RDF turtle based on relationship inference between entity and business process</p>
+</div>
+
+<div class="ng-home-feature">
+  <div class="ng-home-feature-icon">
+    <ui5-icon name="heatmap-chart"></ui5-icon>
+  </div>
+  <h3>Trusted LLM & Digital Twin Foundation</h3>
+  <p>Built with VitePress, local search, sidebar navigation, dark mode, and GitHub Pages deployment.</p>
+</div>
+
+</div>
+
 <div class="home-explorer-section">
 
 <div class="home-explorer-heading">
 
 <p class="home-explorer-eyebrow">Interactive RDF / OWL Explorer</p>
 
-<h2>Try Neuro Graph directly in the docs</h2>
+<h2>Neuro Explorer to visualize Knowledge Graph</h2>
 
 <p>
 Choose a sample ontology, upload RDF/OWL data, switch between friendly, ontology,

@@ -764,3 +764,67 @@ html.ng-explorer-route .ng-table-wrap {
     max-height: none !important;
   }
 }
+
+/* SAP/UI5-style feature cards on home page */
+
+.ng-home-features {
+  width: min(100% - 48px, 1280px);
+  margin: 48px auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.ng-home-feature {
+  padding: 32px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.58));
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.dark .ng-home-feature {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.68));
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+.ng-home-feature-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(125, 211, 252, 0.22), rgba(139, 92, 246, 0.22));
+  color: #38bdf8;
+}
+
+.ng-home-feature-icon ui5-icon {
+  width: 26px;
+  height: 26px;
+  color: currentColor;
+}
+
+.ng-home-feature h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ng-home-feature p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@media (max-width: 960px) {
+  .ng-home-features {
+    grid-template-columns: 1fr;
+    width: min(100% - 32px, 1280px);
+  }
+}

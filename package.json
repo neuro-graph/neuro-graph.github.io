@@ -4,10 +4,12 @@
   "private": true,
   "type": "module",
   "dependencies": {
-  "3d-force-graph": "^1.79.1",
-  "n3": "^2.0.4",
-  "three-spritetext": "^1.10.0"
-},
+    "@ui5/webcomponents": "^2.23.2",
+    "@ui5/webcomponents-icons": "^2.23.2",
+    "3d-force-graph": "^1.79.1",
+    "n3": "^2.0.4",
+    "three-spritetext": "^1.10.0"
+  },
   "scripts": {
     "dev": "vitepress dev docs --host 0.0.0.0",
     "build": "vitepress build docs",
