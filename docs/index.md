@@ -39,8 +39,8 @@ hero:
   <div class="ng-home-feature-icon">
     <ui5-icon name="heatmap-chart"></ui5-icon>
   </div>
-  <h3>Trusted LLM & Digital Twin Foundation</h3>
-  <p>Built with VitePress, local search, sidebar navigation, dark mode, and GitHub Pages deployment.</p>
+  <h3>Trusted LLM, Neuro-Symbolic AI & Digital Twin Foundation</h3>
+  <p>Provide foundation knowledge for building of Trusted LLM, Neuri-Symbolic AI & Digital Twin Foundation</p>
 </div>
 
 </div>
