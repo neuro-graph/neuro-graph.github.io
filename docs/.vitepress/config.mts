@@ -41,7 +41,8 @@ export default defineConfig({
             text: 'Overview',
             items: [
               { text: 'Introduction', link: '/docs' },
-              { text: 'Getting Started', link: '/getting-started' }
+              { text: 'Getting Started', link: '/getting-started' },
+              { text: 'Open Knowledge Format', link: '/okf' }
             ]
           },
           {

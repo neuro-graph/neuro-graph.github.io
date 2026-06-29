@@ -14,7 +14,7 @@ export default {
       import('@ui5/webcomponents-icons/dist/overview-chart.js')
       import('@ui5/webcomponents-icons/dist/chain-link.js')
       import('@ui5/webcomponents-icons/dist/heatmap-chart.js')
-      import('@ui5/webcomponents-icons/dist/org-chart.js')
+      import('@ui5/webcomponents-icons/dist/people-connected.js')
       import('@ui5/webcomponents-icons/dist/workflow-tasks.js')
       import('@ui5/webcomponents-icons/dist/document-text.js')
     }

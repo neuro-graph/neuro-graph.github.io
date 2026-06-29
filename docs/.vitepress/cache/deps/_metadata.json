@@ -2,108 +2,114 @@
   "hash": "d42476b6",
   "configHash": "20a30c4f",
   "lockfileHash": "14afbcdb",
-  "browserHash": "345cee8e",
+  "browserHash": "24c72ebb",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "3c5ab3db",
+      "fileHash": "e27f4f08",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "f0dab645",
+      "fileHash": "21801317",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "7eeffd0a",
+      "fileHash": "03a6d989",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "507343ea",
+      "fileHash": "5424e9db",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "de459e2e",
+      "fileHash": "74bfcdc7",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "b0f47fb9",
+      "fileHash": "4c0c76d9",
       "needsInterop": false
     },
     "@ui5/webcomponents/dist/Icon.js": {
       "src": "../../../../node_modules/@ui5/webcomponents/dist/Icon.js",
       "file": "@ui5_webcomponents_dist_Icon__js.js",
-      "fileHash": "82c850ae",
+      "fileHash": "8cfc0ad8",
       "needsInterop": false
     },
     "@ui5/webcomponents-icons/dist/overview-chart.js": {
       "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/overview-chart.js",
       "file": "@ui5_webcomponents-icons_dist_overview-chart__js.js",
-      "fileHash": "99bebe90",
+      "fileHash": "d51a6e80",
       "needsInterop": false
     },
     "@ui5/webcomponents-icons/dist/chain-link.js": {
       "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/chain-link.js",
       "file": "@ui5_webcomponents-icons_dist_chain-link__js.js",
-      "fileHash": "c82e8d84",
+      "fileHash": "33884b60",
       "needsInterop": false
     },
     "@ui5/webcomponents-icons/dist/developer-settings.js": {
       "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/developer-settings.js",
       "file": "@ui5_webcomponents-icons_dist_developer-settings__js.js",
-      "fileHash": "9370006c",
+      "fileHash": "9d284ad2",
       "needsInterop": false
     },
     "@ui5/webcomponents-icons/dist/org-chart.js": {
       "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/org-chart.js",
       "file": "@ui5_webcomponents-icons_dist_org-chart__js.js",
-      "fileHash": "1ef18a16",
+      "fileHash": "4e18a446",
       "needsInterop": false
     },
     "@ui5/webcomponents-icons/dist/workflow-tasks.js": {
       "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/workflow-tasks.js",
       "file": "@ui5_webcomponents-icons_dist_workflow-tasks__js.js",
-      "fileHash": "d63fe290",
+      "fileHash": "75fc2bba",
       "needsInterop": false
     },
     "@ui5/webcomponents-icons/dist/document-text.js": {
       "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/document-text.js",
       "file": "@ui5_webcomponents-icons_dist_document-text__js.js",
-      "fileHash": "e3fbd262",
+      "fileHash": "0ba6c522",
       "needsInterop": false
     },
     "3d-force-graph": {
       "src": "../../../../node_modules/3d-force-graph/dist/3d-force-graph.mjs",
       "file": "3d-force-graph.js",
-      "fileHash": "6a7ec0fa",
+      "fileHash": "91ec2e4b",
       "needsInterop": false
     },
     "three-spritetext": {
       "src": "../../../../node_modules/three-spritetext/dist/three-spritetext.mjs",
       "file": "three-spritetext.js",
-      "fileHash": "12907ffd",
+      "fileHash": "2ef62955",
       "needsInterop": false
     },
     "n3": {
       "src": "../../../../node_modules/n3/src/index.js",
       "file": "n3.js",
-      "fileHash": "aa17433e",
+      "fileHash": "1cc06fc4",
       "needsInterop": false
     },
     "@ui5/webcomponents-icons/dist/heatmap-chart.js": {
       "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/heatmap-chart.js",
       "file": "@ui5_webcomponents-icons_dist_heatmap-chart__js.js",
-      "fileHash": "c915a443",
+      "fileHash": "23b3b1b8",
+      "needsInterop": false
+    },
+    "@ui5/webcomponents-icons/dist/people-connected.js": {
+      "src": "../../../../node_modules/@ui5/webcomponents-icons/dist/people-connected.js",
+      "file": "@ui5_webcomponents-icons_dist_people-connected__js.js",
+      "fileHash": "cdc982e0",
       "needsInterop": false
     }
   },
