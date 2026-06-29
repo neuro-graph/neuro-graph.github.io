@@ -43,6 +43,14 @@ hero:
   <p>Provide foundation knowledge for building of Trusted LLM, Neuri-Symbolic AI & Digital Twin Foundation</p>
 </div>
 
+<div class="ng-home-feature">
+  <div class="ng-home-feature-icon">
+    <ui5-icon name="people-connected"></ui5-icon>
+  </div>
+  <h3>Open Knowledge Format (OKF)</h3>
+  <p>An open specification that formalizes the LLM-wiki pattern into a portable, interoperable format. This is a vendor-neutral, agent- and human-friendly standard for representing the metadata, context, and curated knowledge that modern AI systems need.</p>
+</div>
+
 </div>
 
 <div class="home-explorer-section">
